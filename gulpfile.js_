@@ -30,6 +30,24 @@ gulp.task('autoprefixer', function () {
 		.pipe(gulp.dest('./'));
 });
 
+var params = {
+	out: 'public',
+	htmlSrc: 'index.html',
+	levels: ['common.blocks']
+}
+
+getFileNames  = require('html2bl').getFilesNames(params);
+
+gulp.task('less', function() {
+	/*getFileNames.then(function(files){
+		console.log(files);
+	})*/
+	gulp.src(['./common.blocks/**/*.less'])
+	.pipe(concat('stule.less'))
+	.pipe(gulp.dest(params.out))
+	.pipe(reload({stream: true}));
+});
+
 /* Task when running `gulp` from terminal */
-gulp.task('default', ['compile-less', 'watch-less', 'concat-js', 'autoprefixer']);
+gulp.task('default', ['compile-less', 'watch-less', 'concat-js', 'autoprefixer', 'less']);
 
