@@ -148,12 +148,33 @@
 .main-content__poster {
   display: none;
   position: relative;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  z-index: 100;
   width: 50%;
-  font-weight: bold;
   font-family: 'Montserrat', sans-serif;
+}
+.main-content__poster-items {
+  z-index: 100;
+  margin-top: 131px;
+  margin-left: 67px;
+  color: #232323;
+}
+.main-content__poster-item-one {
+  font-size: 40px;
+}
+.main-content__poster-item-two {
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 71px;
+}
+.main-content__poster-item-three {
+  font-weight: bold;
+  font-size: 75px;
+  line-height: 71px;
+}
+.main-content__poster-item-four {
+  color: #666;
+  font-size: 17px;
+  line-height: 20px;
 }
 .main-content__img {
   display: block;
