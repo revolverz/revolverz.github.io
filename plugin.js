@@ -9,15 +9,11 @@
   @license Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) license.
 */
 
-$(document).ready(function () {
-
     (function ($) {
 
         var methods = {
 
             init: function (options) {
-
-                return this.each(function () {
 
                     var menu_selector = "." + $(this).attr('class').split(' ')[0];
 
@@ -113,7 +109,6 @@ $(document).ready(function () {
                         });
                     };
                     setHandlers(settings, [onScroll, onClick, onLight_bg]);
-                });
             },
 
             destroy: function (options) {
@@ -134,4 +129,3 @@ $(document).ready(function () {
             }
         };
     })(jQuery);
-});

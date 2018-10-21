@@ -7,35 +7,42 @@
 .main-content__poster {
     display: none;
     position: relative;
-    z-index: 100;
     width: 50%;
     font-family: 'Montserrat', sans-serif;
 }
 
 .main-content__poster-items {
-    z-index: 100;
-    margin-top: 131px;
-    margin-left: 67px;
+    margin-top: 123px;
+    margin-left: 70px;
     color: #232323;
 }
 
 .main-content__poster-item-one {
+    position: relative;
+    z-index: 100;
     font-size: 40px;
 }
 
 .main-content__poster-item-two {
+    position: relative;
+    z-index: 100;
     font-weight: bold;
     font-size: 80px;
     line-height: 71px;
 }
 
 .main-content__poster-item-three {
+    position: relative;
+    z-index: 100;
     font-weight: bold;
     font-size: 75px;
     line-height: 71px;
 }
 
 .main-content__poster-item-four {
+    position: relative;
+    z-index: 100;
+    margin: 5px 0 0 6px;
     color: #666;
     font-size: 17px;
     line-height: 20px;
@@ -48,7 +55,23 @@
     left: 400px;
     width: 370px;
     height: 470px;
-    background: url(common.blocks/main-content/type_one.png) no-repeat center center / contain;
+
+    &_type_one {
+        background: url(common.blocks/main-content/type_one.png) no-repeat center center / contain;
+    }
+
+    &_type_two {
+        background: url(common.blocks/main-content/type_two.png) no-repeat center center / contain;
+    }
+
+    &_type_three {
+        background: url(common.blocks/main-content/type_three.png) no-repeat center center / contain;
+        width: 695px;
+        height: 485px;
+    }
+    &_type_four {
+        background: url(common.blocks/main-content/type_four.png) no-repeat center center / contain;
+    }
 }
 
 .main-content__list {
