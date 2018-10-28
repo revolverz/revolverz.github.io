@@ -8,6 +8,10 @@ var autoprefixer = require('gulp-autoprefixer');
 gulp.task('compile-less', function () {
 	gulp.src('styles.less')
 		.pipe(less())
+		.pipe(autoprefixer({
+			browsers: ['last 2 versions'],
+			cascade: false
+		  }))
 		.pipe(gulp.dest('./'));
 });
 
@@ -22,14 +26,6 @@ gulp.task('concat-js', function () {
 		.pipe(gulp.dest('./'));
 });
 
-gulp.task('autoprefixer', function () {
-	gulp.src('./styles.css')
-		.pipe(autoprefixer({
-			browsers: ['last 2 versions']
-		}))
-		.pipe(gulp.dest('./'));
-});
-
 /* Task when running `gulp` from terminal */
-gulp.task('default', ['compile-less', 'watch-less', 'concat-js', 'autoprefixer']);
+gulp.task('default', [ 'compile-less', 'watch-less', 'concat-js' ]);
 
