@@ -1,54 +1,45 @@
 .catalog {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px; // убрать
-}
-
-.catalog__shirts {
-    display: flex;
-    height: 376px;
     margin-bottom: 20px;
-    background-color: ffffff;
-}
 
-.catalog-column:hover .catalog-column__title {
-    z-index: 100;
-    color: #be926f;
-}
+    &__shirts {
+        display: flex;
+        height: 376px;
+        margin-bottom: 20px;
+        background-color: ffffff;
+    }
 
-.catalog-column:hover .catalog__hover-options {
-    opacity: 1;
-}
+    &__hover-options {
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.9);
+        opacity: 0;
+        transition: all 0.3s;
+    }
 
-.catalog__hover-options {
-    display: flex;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.9);
-    opacity: 0;
-    transition: all 0.3s;
-}
+    &__add-offer {
+        display: flex;
+    }
 
-.catalog__add-offer {
-    display: flex;
-}
+    &__skirt {
+        display: flex;
+        width: 568px;
+        height: 118px;
+        margin-right: 30px;
+        border: 1px solid #e7e7e7;
+    }
 
-.catalog__skirt {
-    display: flex;
-    width: 568px;
-    height: 118px;
-    margin-right: 30px;
-    border: 1px solid #e7e7e7;
-}
-
-.catalog__denim {
-    display: block;
-    width: 570px;
-    height: 120px;
-    background-color: #e7e7e7;
+    &__denim {
+        display: block;
+        width: 570px;
+        height: 120px;
+        background-color: #e7e7e7;
+    }
 }

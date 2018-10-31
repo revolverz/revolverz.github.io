@@ -5,52 +5,61 @@
     justify-content: space-between;
     align-items: center;
     width: 25%;
-    border-top: 2px solid #e7e7e7;
-    border-bottom: 2px solid #e7e7e7;
-    border-left: 2px solid #e7e7e7;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    border-left: 1px solid #e7e7e7;
 
     &_type_for {
-        border-right: 1px solid #e7e7e7; // костыль
+        border-right: 1px solid #e7e7e7;
     }
-}
 
-.catalog-column__head {
-    display: flex;
-    flex-direction: column;
-}
+    &:hover &__title {
+        z-index: 100;
+        color: #be926f;
+    }
 
-.catalog-column__title {
-    margin-top: 25px;
-    color: #232323;
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 22px;
-    text-align: center;
-}
+    &:hover .catalog__hover-options {
+        opacity: 1;
+    }
 
-.catalog-column__subtitle {
-    z-index: 20;
-    margin-top: 5px;
-    color: #999;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 24px;
-    text-align: center;
-}
+    &__head {
+        display: flex;
+        flex-direction: column;
+    }
 
-.catalog-column__main-picture {
-    display: block;
-    position: absolute;
-    top: 100px;
-    z-index: -100;
-    width: 170px;
-    height: 200px;
-}
+    &__title {
+        margin-top: 25px;
+        color: #232323;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 22px;
+        text-align: center;
+    }
 
-.catalog-column__price {
-    z-index: 20;
-    margin-bottom: 19px;
-    color: #be926f;
-    font-size: 20px;
-    line-height: 24px;
+    &__subtitle {
+        z-index: 20;
+        margin-top: 5px;
+        color: #999;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    &__main-picture {
+        display: block;
+        position: absolute;
+        top: 100px;
+        z-index: -100;
+        width: 170px;
+        height: 200px;
+    }
+
+    &__price {
+        z-index: 20;
+        margin-bottom: 19px;
+        color: #be926f;
+        font-size: 20px;
+        line-height: 24px;
+    }
 }
