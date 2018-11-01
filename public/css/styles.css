@@ -312,19 +312,25 @@ template {
 .header-line__auth {
   margin-top: 51px;
   margin-left: 32px;
-  color: #666;
   font-weight: bold;
   font-size: 13px;
 }
 .header-line__login {
   margin-right: 13px;
+  color: #666;
+  text-decoration: none;
 }
 .header-line__or {
   margin-right: 5px;
   color: #2d2d2d;
+  text-decoration: none;
+}
+.header-line__register {
+  color: #666;
+  text-decoration: none;
 }
 .logo {
-  background: url(common.blocks/logo/logo.png) no-repeat center center / contain;
+  background: url(../../src/common.blocks/logo/logo.png) no-repeat center center / contain;
 }
 @media only screen and (min-width: 992px) {
   .logo {
@@ -366,7 +372,7 @@ template {
   height: 18px;
   margin: 15px;
   border: none;
-  background: url(common.blocks/search-form/search-form__img_type_search.png) no-repeat center center / contain;
+  background: url(../../src/common.blocks/search-form/search-form__img_type_search.png) no-repeat center center / contain;
 }
 .content {
   font-family: 'Montserrat', sans-serif;
@@ -448,11 +454,11 @@ template {
 .menu__link_type_sale {
   letter-spacing: 0.5px;
 }
-.usb {
+.cart {
   width: 17px;
   height: 22px;
   margin-right: 35px;
-  background: url(common.blocks/usb/usb.png) no-repeat center center / contain;
+  background: url(../../src/common.blocks/cart/cart.png) no-repeat center center / contain;
 }
 .burger {
   width: 20px;
@@ -518,23 +524,23 @@ template {
   width: 370px;
   height: 470px;
 }
-.main-content__img_type_one {
-  background: url(common.blocks/main-content/main-content__img_type_one.png) no-repeat center center / contain;
+.main-content__img_type_fashion-shirts {
+  background: url(../../src/common.blocks/main-content/main-content__img_type_fashion-shirts.png) no-repeat center center / contain;
 }
-.main-content__img_type_two {
+.main-content__img_type_new-prints {
   display: block;
   position: absolute;
   bottom: 61px;
   left: 400px;
   width: 550px;
   height: 460px;
-  background: url(common.blocks/main-content/main-content__img_type_two.png) no-repeat center center / contain;
+  background: url(../../src/common.blocks/main-content/main-content__img_type_two.png) no-repeat center center / contain;
 }
-.main-content__img_type_three {
-  background: url(common.blocks/main-content/main-content__img_type_three.png) no-repeat center center / contain;
+.main-content__img_type_sale {
+  background: url(../../src/common.blocks/main-content/main-content__img_type_sale.png) no-repeat center center / contain;
 }
-.main-content__img_type_four {
-  background: url(common.blocks/main-content/main-content__img_type_four.png) no-repeat center center / contain;
+.main-content__img_type_new-swimwear {
+  background: url(../../src/common.blocks/main-content/main-content__img_type_new-swimwear.png) no-repeat center center / contain;
 }
 .main-content__list {
   display: -webkit-box;
@@ -573,7 +579,7 @@ template {
   display: -ms-flexbox;
   display: flex;
   color: white;
-  background: url(common.blocks/main-content/main-content__type_active-bg.png) no-repeat center center / contain;
+  background: url(../../src/common.blocks/main-content/main-content__type_active-bg.png) no-repeat center center / contain;
 }
 .main-content__item_type_last {
   background-size: 0 0.5px, 370px 0;
@@ -756,8 +762,6 @@ template {
   position: absolute;
   top: 100px;
   z-index: -100;
-  width: 170px;
-  height: 200px;
 }
 .catalog-column__price {
   z-index: 20;
@@ -774,11 +778,11 @@ template {
 }
 .add-wishlist__icon-like {
   display: block;
-  width: 14px;
-  background: url(common.blocks/add-wishlist/add-wishlist__image_type_like.png) no-repeat center center / contain;
+  width: 17px;
+  background: url(../../src/common.blocks/add-wishlist/add-wishlist__img_type_like.png) no-repeat center center / contain;
 }
 .add-wishlist__icon-like:hover {
-  background: url(common.blocks/add-wishlist/add-wishlist__image_type_like-hover.png) no-repeat center center / contain;
+  background: url(../../src/common.blocks/add-wishlist/add-wishlist__img_type_like-hover.png) no-repeat center center / contain;
 }
 .add-wishlist__text {
   color: #999;
