@@ -611,7 +611,6 @@ template {
   letter-spacing: 2px;
   font-weight: bold;
   font-size: 11px;
-  font-family: 'Montserrat';
   line-height: 24px;
   text-align: center;
   text-decoration: none;
@@ -641,6 +640,13 @@ template {
     height: 40px;
     margin-top: 174px;
   }
+}
+.button_type_about-us {
+  width: 110px;
+  height: 40px;
+  margin-bottom: 53px;
+  border: 2px solid #be926f;
+  background-color: rgba(255, 255, 255, 0);
 }
 .catalog {
   display: -webkit-box;
@@ -685,6 +691,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 20px;
 }
 .catalog__skirt {
   display: -webkit-box;
@@ -789,4 +796,85 @@ template {
   font-weight: bold;
   font-size: 13px;
   line-height: 24px;
+}
+.about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 350px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: #222;
+}
+.about-us__header {
+  margin-top: 61px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 60px;
+}
+.about-us__text {
+  width: 819px;
+  height: 115px;
+  color: #ccc;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 28px;
+}
+.contact-types {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  height: 241px;
+}
+.contact-types__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+.contact-types__icon {
+  display: block;
+  width: 45px;
+  height: 45px;
+}
+.contact-types__icon_type_phone {
+  background: url(../../src/common.blocks/contact-types/contacts-types__icon_type_phone.png) no-repeat center center / contain;
+}
+.contact-types__icon_type_location {
+  background: url(../../src/common.blocks/contact-types/contacts-types__icon_type_location.png) no-repeat center center / contain;
+}
+.contact-types__icon_type_mail {
+  background: url(../../src/common.blocks/contact-types/contacts-types__icon_type_mail.png) no-repeat center center / contain;
+}
+.contact-types__info-header {
+  color: #222;
+  font-size: 30px;
+  line-height: 42px;
+}
+.contact-types__info-text {
+  width: 180px;
+  color: #666;
+  font-size: 16px;
+  line-height: 22px;
 }

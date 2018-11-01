@@ -1,0 +1,44 @@
+.contact-types {
+    display: flex;
+    justify-content: space-around;
+    height: 241px;
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__icon {
+        display: block;
+        width: 45px;
+        height: 45px;
+    }
+
+    &__icon_type_phone {
+        background: url(../../src/common.blocks/contact-types/contacts-types__icon_type_phone.png) no-repeat center center / contain;
+    }
+
+    &__icon_type_location {
+        background: url(../../src/common.blocks/contact-types/contacts-types__icon_type_location.png) no-repeat center center / contain;
+    }
+
+    &__icon_type_mail {
+        background: url(../../src/common.blocks/contact-types/contacts-types__icon_type_mail.png) no-repeat center center / contain;
+    }
+
+    &__info-header {
+        color: #222;
+        font-size: 30px;
+        line-height: 42px;
+    }
+
+    &__info-text {
+        width: 180px;
+        color: #666;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
