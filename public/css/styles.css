@@ -878,3 +878,29 @@ template {
   font-size: 16px;
   line-height: 22px;
 }
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.footer__social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer__icon {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+.footer__icon_type_fb {
+  background: url(../../src/common.blocks/footer/footer__img_type_fb.png) no-repeat center center / contain;
+}
+.footer__icon_type_google {
+  background: url(../../src/common.blocks/footer/footer__img_type_google.png) no-repeat center center / contain;
+}
+.footer__icon_type_tw {
+  background: url(../../src/common.blocks/footer/footer__img_type_tw.png) no-repeat center center / contain;
+}
