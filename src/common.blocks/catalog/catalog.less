@@ -1,0 +1,46 @@
+.catalog {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    &__shirts {
+        display: flex;
+        height: 376px;
+        margin-bottom: 20px;
+        background-color: ffffff;
+    }
+
+    &__hover-options {
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.9);
+        opacity: 0;
+        transition: all 0.3s;
+    }
+
+    &__add-offer {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    &__skirt {
+        display: flex;
+        width: 568px;
+        height: 118px;
+        margin-right: 30px;
+        border: 1px solid #e7e7e7;
+    }
+
+    &__denim {
+        display: block;
+        width: 570px;
+        height: 120px;
+        background-color: #e7e7e7;
+    }
+}

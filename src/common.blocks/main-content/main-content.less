@@ -1,0 +1,137 @@
+.main-content {
+    display: flex;
+    height: 480px;
+    margin-bottom: 20px;
+    background-color: #e7e7e7;
+
+    &__poster {
+        display: none;
+        position: relative;
+        width: 50%;
+
+        &_type_active-poster {
+            display: flex;
+        }
+    }
+
+    &__poster-items {
+        margin-top: 123px;
+        margin-left: 70px;
+        color: #232323;
+    }
+
+    &__poster-item-one {
+        position: relative;
+        z-index: 100;
+        font-size: 40px;
+    }
+
+    &__poster-item-two {
+        position: relative;
+        z-index: 100;
+        font-weight: bold;
+        font-size: 80px;
+        line-height: 71px;
+    }
+
+    &__poster-item-three {
+        position: relative;
+        z-index: 100;
+        font-weight: bold;
+        font-size: 75px;
+        line-height: 71px;
+    }
+
+    &__poster-item-four {
+        position: relative;
+        z-index: 100;
+        margin: 5px 0 0 6px;
+        color: #666;
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    &__img {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 400px;
+        width: 370px;
+        height: 470px;
+
+        &_type_fashion-shirts {
+            background: url(../../src/common.blocks/main-content/main-content__img_type_fashion-shirts.png) no-repeat center center / contain;
+        }
+
+        &_type_new-prints {
+            display: block;
+            position: absolute;
+            bottom: 61px;
+            left: 400px;
+            width: 550px;
+            height: 460px;
+            background: url(../../src/common.blocks/main-content/main-content__img_type_two.png) no-repeat center center / contain;
+        }
+
+        &_type_sale {
+            background: url(../../src/common.blocks/main-content/main-content__img_type_sale.png) no-repeat center center / contain;
+        }
+
+        &_type_new-swimwear {
+            background: url(../../src/common.blocks/main-content/main-content__img_type_new-swimwear.png) no-repeat center center / contain;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 50%;
+    }
+
+    &__item {
+        display: flex;
+        position: relative;
+        justify-content: flex-start;
+        align-items: center;
+        width: 390px;
+        height: 25%;
+        background: linear-gradient(#cbcbcb, #cbcbcb), linear-gradient(#cbcbcb, #cbcbcb);
+        background-position: left bottom, right bottom;
+        background-size: 0 0.5px, 370px 1px;
+        background-repeat: no-repeat, no-repeat;
+        
+
+        &_type_active-bg {
+            display: flex;
+            color: white;
+            background: url(../../src/common.blocks/main-content/main-content__type_active-bg.png) no-repeat center center / contain;
+        }
+
+        &_type_last {
+            background-size: 0 0.5px, 370px 0;
+        }
+    }
+
+    &__item-text {
+        margin-left: 60px;
+        font-weight: 600;
+        font-size: 17px;
+    }
+
+    &__number {
+        display: none;
+        position: absolute;
+        width: 100%;
+        color: #eebe98;
+        font-weight: bold;
+        font-size: 120px;
+        line-height: 20px;
+        text-align: center;
+        opacity: 0.2;
+        
+        &_type_active-number {
+            display: block;
+        }
+    }
+}
