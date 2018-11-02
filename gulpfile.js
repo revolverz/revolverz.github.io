@@ -9,7 +9,7 @@ gulp.task('compile-less', function() {
 	gulp.src('src/bundle/styles.less')
 		.pipe( less() )
 		.pipe( autoprefixer({
-			browsers: ['last 2 versions'],
+			browsers: ['last 5 versions'],
 			cascade: false
 		  }))
 		.pipe( gulp.dest('public/css/') );
