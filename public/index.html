@@ -128,7 +128,7 @@
                     </div>
 
                     <img
-                        class="catalog-column__main-picture"
+                        class="catalog-column__img"
                         src="img/shorts_type_one.png"
                         alt="Denim Shorts In Slim Fit"
                         height="200px"
@@ -154,7 +154,7 @@
                     </div>
 
                     <img
-                        class="catalog-column__main-picture"
+                        class="catalog-column__img"
                         src="img/shorts_type_two.png"
                         alt="New Look Chino Shorts"
                         height="200px" 
@@ -180,7 +180,7 @@
                     </div>
 
                     <img
-                        class="catalog-column__main-picture"
+                        class="catalog-column__img"
                         src="img/shorts_type_three.png"
                         alt="Bellfield Chino Shorts"
                         height="200px"
@@ -206,7 +206,7 @@
                     </div>
 
                     <img
-                        class="catalog-column__main-picture"
+                        class="catalog-column__img"
                         src="img/shorts_type_four.png"
                         alt="Jack & Jones Chino Shorts"
                         height="200px"
@@ -218,8 +218,59 @@
             </div>
 
             <div class="catalog__add-offer">
-                <div class="catalog__skirt"></div>
-                <div class="catalog__denim"></div>
+                <div class="catalog__skirt">
+                    
+                    <div class="catalog__skirt-block">
+                        <img 
+                            class="catalog__img"
+                            src="img/skirts_type_one.png"
+                            alt="Skirt"
+                            height="80px"
+                            width="80px"
+                        >
+                        <div class="catalog__skirt-info">
+                            <span class="catalog__skirt-text">Skirt</span>
+                            <span class="catalog__skirt-title">Marco Polo</span>
+                            <div class="catalog__skirt-prices">
+                                <span class="catalog__skirt-price">$66</span>
+                                <span class="catalog__skirt-price catalog__skirt-price_type_old">$83</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog__skirt-block">
+                        <img  
+                            class="catalog__img"
+                            src="img/skirts_type_two.png"
+                            alt="Skirt"
+                            height="80px"
+                            width="80px"
+                        >
+                        <div class="catalog__skirt-info">
+                            <span class="catalog__skirt-text">Skirt</span>
+                            <span class="catalog__skirt-title">Blue Montana</span>
+                            <span class="catalog__skirt-price">$48</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog__denim">
+                    <div class="catalog__denim-info">
+                        <div class="catalog__denim-head">
+                            <hr width="20" size="2" color="#be926f">
+                            <span class="catalog__denim-text">Denim</span>
+                        </div>
+                        <span class="catalog__denim-title">May Lucy Super Skinn</span>
+                        <span class="catalog__denim-price">$148</span>
+                    </div>
+                    <img
+                        class="catalog-column__img"
+                        src="img/denim_type_one.png"
+                        alt="Jack & Jones Chino Shorts"
+                        height="100px"
+                        width="100px"
+                    >
+                </div>
             </div>
         </div>
 
@@ -236,25 +287,39 @@
                 <input class="button button_type_about-us" type="submit" value="READ MORE">
             </div>
     </div>
+    <div class="video">
+    
+            <video 
+                class="video-1"
+                width="1170" 
+                height="575px"
+                controls="controls" 
+                poster="video/poster.png">
+                <source src="video/video.ogv" type='video/ogg; codecs="theora, vorbis"'>
+                <source src="video/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                <source src="video/video.webm" type='video/webm; codecs="vp8, vorbis"'>
+                Тег video не поддерживается вашим браузером. 
+            </video>
+        </div>
 
             <div class="contact-types">
                 <div class="contact-types__section">
-                    <div class="contact-types__block">
+                    <div class="contact-types__block contact-types__block_type_phone">
                         <div class="contact-types__icon contact-types__icon_type_phone"></div>
                         <div class="contact-types__header">Call us</div>
-                        <div class="contact-types__text">1-800-277-7766</div>
+                        <div class="contact-types__phone-text">1-800-277-7766</div>
                     </div>
 
                     <div class="contact-types__block">
                         <div class="contact-types__icon contact-types__icon_type_location"></div>
                         <div class="contact-types__header">Location</div>
-                        <div class="contact-types__text">Moscow, Pushkin str. 32/A</div>
+                        <div class="contact-types__location-text">Moscow, Pushkin str. 32/A</div>
                     </div>
 
-                    <div class="contact-types__block">
+                    <div class="contact-types__block contact-types__block_type_mail">
                         <div class="contact-types__icon contact-types__icon_type_mail"></div>
                         <div class="contact-types__header">Mail</div>
-                        <div class="contact-types__text">info@monica.com</div>
+                        <a class="contact-types__mail-text" href="mailto:ev.ishmuratov@gmail.com" >info@monica.com</a>
                     </div>
                 </div>
             </div>
