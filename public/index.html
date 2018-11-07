@@ -290,69 +290,85 @@
                 <input class="button button_type_about-us" type="submit" value="READ MORE">
             </div>
 
-            <div class="container">
-                <div id="mixedSlider">
-                    <div class="MS-content">
-                        <div class="item">
-                            <div class="imgTitle">
+            <div class="mixed-slider">
+                <span class="mixed-slider__head">NEW POSTS</span>
+                <div class="mixed-slider__block">
+                    <div class="mixed-slider__content">
+                        <div class="mixed-slider__item">
+                            <div class="mixed-slider__img-title">
                                 <img src="https://placeimg.com/500/300/animals" alt="" />
                             </div>
-                            <div class="catalog__skirt-info">
-                                <span class="catalog__skirt-text">Skirt</span>
-                                <span class="catalog__skirt-title">Blue Montana</span>
-                                <span class="catalog__skirt-price">$48</span>
+                            <div class="mixed-slider__info">
+                                <span class="mixed-slider__text mixed-slider__text_type_travel">TRAVEL</span>
+                                <span class="mixed-slider__title">Fashion Targets Breast Cancer’s Hottest Buys</span>
+                                <div class="mixed-slider__date">
+                                        <span class="mixed-slider__img-clock"></span>
+                                        <span class="mixed-slider__time">16 July at 15:44</span>
+                                </div>
                             </div>
                         </div>
         
-                        <div class="item">
-                            <div class="imgTitle">
+                        <div class="mixed-slider__item">
+                            <div class="mixed-slider__img-title">
                                 <img src="https://placeimg.com/500/300/arch" alt="" />
                             </div>
-                            <div class="catalog__skirt-info">
-                                <span class="catalog__skirt-text">Skirt</span>
-                                <span class="catalog__skirt-title">Blue Montana</span>
-                                <span class="catalog__skirt-price">$48</span>
-                            </div>
-                            
+                            <div class="mixed-slider__info">
+                                <span class="mixed-slider__text mixed-slider__text_type_life">LIFE & STYLE</span>
+                                <span class="mixed-slider__title">Ankle Boots:<br> The Spring Edit</span>
+                                <div class="mixed-slider__date">
+                                        <span class="mixed-slider__img-clock"></span>
+                                        <span class="mixed-slider__time">14 July at 13:03</span>
+                                </div>
+                            </div>                           
                         </div>
         
-                        <div class="item">
-                            <div class="imgTitle">
+                        <div class="mixed-slider__item">
+                            <div class="mixed-slider__img-title">
                                 <img src="https://placeimg.com/500/300/nature" alt="" />
                             </div>
-                            <div class="catalog__skirt-info">
-                                <span class="catalog__skirt-text">Skirt</span>
-                                <span class="catalog__skirt-title">Blue Montana</span>
-                                <span class="catalog__skirt-price">$48</span>
+                            <div class="mixed-slider__info">
+                                <span class="mixed-slider__text mixed-slider__text_type_fashion">FASHION</span>
+                                <span class="mixed-slider__title"> The 8 Must-Have<br> Handbags of 2015</span>
+                                <div class="mixed-slider__date">
+                                        <span class="mixed-slider__img-clock"></span>
+                                        <span class="mixed-slider__time">10 July at 09:37</span>
+                                </div>
                             </div>
                         </div>
         
-                        <div class="item">
-                            <div class="imgTitle">
+                        <div class="mixed-slider__item">
+                            <div class="mixed-slider__img-title">
                                 <img src="https://placeimg.com/500/300/people" alt="" />
                             </div>
-                            <div class="catalog__skirt-info">
-                                <span class="catalog__skirt-text">Skirt</span>
-                                <span class="catalog__skirt-title">Blue Montana</span>
-                                <span class="catalog__skirt-price">$48</span>
+                            <div class="mixed-slider__info">
+                                <span class="mixed-slider__text mixed-slider__text_type_travel">TRAVEL</span>
+                                <span class="mixed-slider__title">Fashion Targets Breast Cancer’s Hottest Buys</span>
+                                <div class="mixed-slider__date">
+                                        <span class="mixed-slider__img-clock"></span>
+                                        <span class="mixed-slider__time">12 July at 17:48</span>
+                                </div>
                             </div>
                         </div>
         
-                        <div class="item">
-                            <div class="imgTitle">
+                        <div class="mixed-slider__item">
+                            <div class="mixed-slider__img-title">
                                 <img src="https://placeimg.com/500/300/tech" alt="" />
                             </div>
-                            <div class="catalog__skirt-info">
-                                <span class="catalog__skirt-text">Skirt</span>
-                                <span class="catalog__skirt-title">Blue Montana</span>
-                                <span class="catalog__skirt-price">$48</span>
-                            </div>
+                            <div class="mixed-slider__info">
+                                <span class="mixed-slider__text mixed-slider__text_type_beauty">BEAUTY</span>
+                                <span class="mixed-slider__title">Perrie Edwards And Her<br> Fab Fashion File</span>
+                                <div class="mixed-slider__date">
+                                    <span class="mixed-slider__img-clock"></span>
+                                    <span class="mixed-slider__time">10 July at 09:37</span>
+                                </div>
+                                
+                            </div>                
                         </div>
-        
+    
                     </div>
-                    <div class="MS-controls">
-                        <button class="MS-left"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
-                        <button class="MS-right"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                    <div class="mixed-slider__controls">
+                        <button class="mixed-slider__left"><i class="fal fa-caret-left"></i></button>
+                        <button class="mixed-slider__right"><i class="fal fa-caret-right"></i></button>
                     </div>
                 </div>
             </div>
@@ -414,11 +430,7 @@
 </body>
 
 <script>
-    $('#basicSlider').multislider({
-        continuous: true,
-        duration: 2000
-    });
-    $('#mixedSlider').multislider({
+    $('.mixed-slider__block').multislider({
         duration: 750,
         interval: 0
     });

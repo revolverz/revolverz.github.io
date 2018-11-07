@@ -9,84 +9,137 @@
     url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
 }
 
-.container {
+.mixed-slider {
     border-top: 1px solid #e7e7e7;
 }
 
-#mixedSlider {
+.mixed-slider__head {
+    display: block;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #232323;
+    font-weight: bold;
+    text-align: center;
+    width: 140px;
+    margin: auto;
+}
+
+.mixed-slider__block {
     position: relative;
 }
 
-#mixedSlider .MS-content {
+.mixed-slider__content {
     overflow: hidden;
+    margin-top: 60px;
+    margin-bottom: 40px;
     white-space: nowrap;
 }
 
-#mixedSlider .MS-content .item {
+.mixed-slider__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 166px;
+    font-weight: bold;
+}
+
+.mixed-slider__text {
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.mixed-slider__text_type_travel {
+    color: #7f9f5d;
+}
+
+.mixed-slider__text_type_beauty {
+    color: #cd7b87;
+}
+
+.mixed-slider__text_type_fashion {
+    color: #a677c7;
+}
+
+.mixed-slider__text_type_life {
+    color: #538dc8;
+}
+
+.mixed-slider__title {
+    color: #000;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.mixed-slider__date {
+    display: flex;
+    color: #999;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.mixed-slider__img-clock {
+    width: 16px;
+    margin-right: 5px;
+    background: url(../../plugin-multislider/mixed-slider__img_clock.png) no-repeat center center / contain;
+}
+
+.mixed-slider__item {
     display: inline-block;
     position: relative;
     overflow: hidden;
-    width: 25%;
+    width: 270px;
     height: 100%;
-    padding: 0 10px 0 0;
+    margin-right: 30px;
+    border-bottom: 1px solid #e7e7e7;
     vertical-align: top;
     white-space: normal;
 }
 
 @media (max-width: 991px) {
-    #mixedSlider .MS-content .item {
+    .mixed-slider__item {
         width: 50%;
     }
 }
 
 @media (max-width: 767px) {
-    #mixedSlider .MS-content .item {
+    .mixed-slider__item {
         width: 100%;
     }
 }
 
-#mixedSlider .MS-content .item .imgTitle {
+.mixed-slider__img-title {
     position: relative;
 }
 
-.fa {
-    display: inline-block;font: normal normal normal 14px/1 FontAwesome;font-size: inherit;text-rendering: auto;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale
+.fal {
+    font: 14px FontAwesome;
+    font-size: inherit;
 }
 
-.fa-angle-left:before {
-    content: '\f104'
+.fal .fa-caret-left:before {
+    content: '\f0da';
 }
 
-.fa-angle-right:before {
-    content: '\f105'
+.fal .fa-caret-right:before {
+    content: '\f0da';
 }
 
-#mixedSlider .MS-content .item .imgTitle .blogTitle {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 0 0 2px 10px;
-    margin: 0;
-    color: #252525;
-    letter-spacing: 2px;
-    font-weight: bold;
-    font-style: italic;
-    text-align: left;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-#mixedSlider .MS-content .item .imgTitle img {
+.mixed-slider__img-title img {
     width: 270px;
     height: 210px;
 }
 
-#mixedSlider .MS-content .item p {
+.mixed-slider__item p {
     margin: 2px 10px 0 5px;
     font-size: 16px;
     text-indent: 15px;
 }
 
-#mixedSlider .MS-content .item a {
+.mixed-slider__item a {
     float: right;
     margin: 0 20px 0 0;
     color: rgba(173, 0, 0, 0.82);
@@ -97,13 +150,14 @@
     transition: linear 0.1s;
 }
 
-#mixedSlider .MS-content .item a:hover {
+.mixed-slider__item a:hover {
     text-shadow: 0 0 1px grey;
 }
 
-#mixedSlider .MS-controls button {
+.mixed-slider__right, .mixed-slider__left {
     position: absolute;
     top: -60px;
+    padding: 0;
     outline: 0;
     border: none;
     color: rgba(0, 0, 0, 0.4);
@@ -112,38 +166,38 @@
     transition: 0.15s linear;
 }
 
-#mixedSlider .MS-controls button:hover {
+.mixed-slider__controls button:hover {
     color: rgba(0, 0, 0, 0.8);
 }
 
 @media (max-width: 992px) {
-    #mixedSlider .MS-controls button {
+    .mixed-slider__controls button {
         font-size: 30px;
     }
 }
 
 @media (max-width: 767px) {
-    #mixedSlider .MS-controls button {
+    .mixed-slider__controls button {
         font-size: 20px;
     }
 }
 
-#mixedSlider .MS-controls .MS-left {
+.mixed-slider__left {
     left: 0;
 }
 
 @media (max-width: 767px) {
-    #mixedSlider .MS-controls .MS-left {
+    .mixed-slider__left {
         left: -10px;
     }
 }
 
-#mixedSlider .MS-controls .MS-right {
+.mixed-slider__right {
     right: 0;
 }
 
 @media (max-width: 767px) {
-    #mixedSlider .MS-controls .MS-right {
+    .mixed-slider__right {
         right: -10px;
     }
 }

@@ -14,10 +14,10 @@
 
         // ==== CACHE DOM ====
         var $multislider = $(this);
-        var $msContent = $multislider.find('.MS-content');
-        var $msRight = $multislider.find('button.MS-right');
-        var $msLeft = $multislider.find('button.MS-left');
-        var $imgFirst = $msContent.find('.item:first');
+        var $msContent = $multislider.find('.mixed-slider__content');
+        var $msRight = $multislider.find('button.mixed-slider__right');
+        var $msLeft = $multislider.find('button.mixed-slider__left');
+        var $imgFirst = $msContent.find('.mixed-slider__item:first');
 
         // === DETERMINE ACTION ====
         // string = method | object or nothing is to initialize
@@ -55,7 +55,7 @@
         // ==== EVENT HANDLERS ====
         $msRight.on('click', animateSlideLeft);
         $msLeft.on('click', animateSlideRight);
-        $multislider.on('click','.MS-right, .MS-left', resetInterval);
+        $multislider.on('click','.mixed-slider__right, .mixed-slider__left', resetInterval);
         $(window).on('resize', findItemWidth);
 
 
@@ -168,8 +168,8 @@
         function findItemWidth(){
             reTargetSlides();
             animateDistance = $imgFirst.width();
-            var left = parseInt($msContent.find('.item:first').css('padding-left'));
-            var right = parseInt($msContent.find('.item:first').css('padding-right'));
+            var left = parseInt($msContent.find('.mixed-slider__item:first').css('padding-left'));
+            var right = parseInt($msContent.find('.mixed-slider__item:first').css('padding-right'));
             if (left !== 0){animateDistance += left;}
             if (right !== 0){animateDistance += right;}
         }
@@ -192,8 +192,8 @@
 
         // target first and last visible slides before each new animation
         function reTargetSlides(){
-            $imgFirst = $msContent.find('.item:first');
-            $imgLast = $msContent.find('.item:last');
+            $imgFirst = $msContent.find('.mixed-slider__item:first');
+            $imgLast = $msContent.find('.mixed-slider__item:last');
         }
 
         // prevent animation firing if multislider is currently animating
@@ -222,26 +222,26 @@
             if(settings.continuous){
 				$msContent.on('mouseover',function(){
 					doneAnimating();
-					$msContent.children('.item:first').stop();
+					$msContent.children('.mixed-slider__item:first').stop();
 				});
 				$msContent.on('mouseout',function(){
 					continuousLeft();
 				});
-			} else {
+			/* } else {
             // regular animation pausing
-                $msContent.on('mouseover',function(){
+               $msContent.on('mouseover',function(){
                     $multislider.addClass('ms-HOVER');
                 });
                 $msContent.on('mouseout',function(){
                     $multislider.removeClass('ms-HOVER');
-                });
+                });*/
 			}
         }
 
         // calculate remaining animation, if stopped mid-animation and resuming
         function midAnimateResume(){
             animateDuration = settings.duration;
-            var currentMargin = parseFloat($msContent.find('.item:first').css("margin-left"));
+            var currentMargin = parseFloat($msContent.find('.mixed-slider__item:first').css("margin-left"));
             var percentageRemaining = 1-(currentMargin/-(animateDistance-1));
             animateDuration = percentageRemaining*animateDuration;
         }
@@ -279,7 +279,7 @@
                 reTargetSlides();
                 calcNumSlidesToMove();
 
-                var $clonedItemSet = $msContent.children('.item').clone();
+                var $clonedItemSet = $msContent.children('.mixed-slider__item').clone();
                 var filteredClones = $clonedItemSet.splice(0, numberVisibleSlides);
 
                 $msContent.append(filteredClones);
@@ -289,7 +289,7 @@
                         duration: animateDuration,
                         easing: "swing",
                         complete: function(){
-                            $($msContent.children('.item').splice(0,numberVisibleSlides)).remove();
+                            $($msContent.children('.mixed-slider__item').splice(0,numberVisibleSlides)).remove();
                             doneAnimating();
                         }
                     }
@@ -302,8 +302,8 @@
                 reTargetSlides();
                 calcNumSlidesToMove();
 
-                var numberTotalSlides = $msContent.children('.item').length;
-                var $clonedItemSet = $msContent.children('.item').clone();
+                var numberTotalSlides = $msContent.children('.mixed-slider__item').length;
+                var $clonedItemSet = $msContent.children('.mixed-slider__item').clone();
                 var filteredClones = $clonedItemSet.splice(numberTotalSlides-numberVisibleSlides,numberTotalSlides);
 
                 $($(filteredClones)[0]).css('margin-left',-totalWidth); // give clone array negative margin before preppending
@@ -318,8 +318,8 @@
                         duration: animateDuration,
                         easing: "swing",
                         complete: function(){
-                            numberTotalSlides = $msContent.find('.item').length;
-                            $($msContent.find('.item').splice(numberTotalSlides-numberVisibleSlides,numberTotalSlides)).remove();
+                            numberTotalSlides = $msContent.find('.mixed-slider__item').length;
+                            $($msContent.find('.mixed-slider__item').splice(numberTotalSlides-numberVisibleSlides,numberTotalSlides)).remove();
                             $imgFirst.removeAttr('style');
                             doneAnimating();
                         }

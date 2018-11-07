@@ -1,4 +1,5 @@
 @import '../../src/common.blocks/plugin-multislider/css/slider.css';
+@import '../../src/common.blocks/all.css';
 .header-line {
   display: -webkit-box;
   display: -ms-flexbox;
