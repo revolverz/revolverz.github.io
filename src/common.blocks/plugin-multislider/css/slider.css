@@ -15,22 +15,23 @@
 
 .mixed-slider__head {
     display: block;
-    font-size: 18px;
-    letter-spacing: 3px;
-    color: #232323;
-    font-weight: bold;
-    text-align: center;
     width: 140px;
     margin: auto;
+    margin-top: 20px;
+    color: #232323;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
 }
 
 .mixed-slider__block {
     position: relative;
+    margin-top: 20px;
 }
 
 .mixed-slider__content {
     overflow: hidden;
-    margin-top: 60px;
     margin-bottom: 40px;
     white-space: nowrap;
 }
@@ -156,12 +157,12 @@
 
 .mixed-slider__right, .mixed-slider__left {
     position: absolute;
-    top: -60px;
+    top: -52px;
     padding: 0;
     outline: 0;
     border: none;
     color: rgba(0, 0, 0, 0.4);
-    font-size: 50px;
+    font-size: 38px;
     background-color: transparent;
     transition: 0.15s linear;
 }
