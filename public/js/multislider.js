@@ -15,8 +15,8 @@
         // ==== CACHE DOM ====
         var $multislider = $(this);
         var $msContent = $multislider.find('.mixed-slider__content');
-        var $msRight = $multislider.find('button.mixed-slider__right');
-        var $msLeft = $multislider.find('button.mixed-slider__left');
+        var $msRight = $multislider.find('button.mixed-slider__arrow-right');
+        var $msLeft = $multislider.find('button.mixed-slider__arrow-left');
         var $imgFirst = $msContent.find('.mixed-slider__item:first');
 
         // === DETERMINE ACTION ====
@@ -55,7 +55,7 @@
         // ==== EVENT HANDLERS ====
         $msRight.on('click', animateSlideLeft);
         $msLeft.on('click', animateSlideRight);
-        $multislider.on('click','.mixed-slider__right, .mixed-slider__left', resetInterval);
+        $multislider.on('click','.mixed-slider__arrow-right, .mixed-slider__arrow-left', resetInterval);
         $(window).on('resize', findItemWidth);
 
 
