@@ -10,23 +10,25 @@
 }
 .header-line__auth {
   margin-top: 51px;
-  margin-left: 32px;
+  margin-left: 31.5px;
   font-weight: bold;
   font-size: 13px;
+  letter-spacing: 0.1px;
 }
 .header-line__login {
-  margin-right: 13px;
+  margin-right: 9px;
   color: #666;
   text-decoration: none;
 }
 .header-line__divider {
-  margin-right: 5px;
+  margin-right: 7px;
   color: #2d2d2d;
   text-decoration: none;
 }
 .header-line__register {
   color: #666;
   text-decoration: none;
+  letter-spacing: 0.5px;
 }
 .logo {
   background: url(../../src/common.blocks/logo/logo.png) no-repeat center center / contain;
@@ -47,21 +49,26 @@
   }
 }
 .search-form {
-  display: block;
   width: 274px;
   height: 46px;
-  margin-top: 34px;
+  margin-top: 35px;
   margin-right: 28px;
-  border: 1px solid #666;
+  border: 1px solid #323232;
   border-radius: 25px;
+  background-color: #232323;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .search-form__input {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding-left: 36px;
+  padding-bottom: 4px;
+  padding-left: 25px;
   outline: none;
   border: 0;
   border-radius: 5px;
+  font-weight: bold;
   font-size: 13px;
   background: 0 0;
 }
@@ -70,6 +77,7 @@
   width: 18px;
   height: 18px;
   margin: 15px;
+  margin-left: 32px;
   border: none;
   background: url(../../src/common.blocks/search-form/search-form__img_type_search.png) no-repeat center center / contain;
 }
@@ -114,7 +122,7 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-top: 34px;
+  margin-top: 35px;
 }
 .header {
   height: 190px;
@@ -134,7 +142,7 @@
 .menu__link {
   color: #fff;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 23.5px;
   text-decoration: none;
 }
 .menu__link_type_women {
@@ -144,11 +152,11 @@
   letter-spacing: 0.5px;
 }
 .menu__link_type_accessories {
-  margin-left: 3px;
-  letter-spacing: 0.4px;
+  margin-right: 1px;
+  letter-spacing: 0.5px;
 }
-.menu__link_type_kids {
-  margin-left: 3px;
+.menu__link_type_blog {
+  letter-spacing: -0.2px;
 }
 .menu__link_type_sale {
   letter-spacing: 0.5px;
