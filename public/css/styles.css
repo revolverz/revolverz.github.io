@@ -87,8 +87,8 @@
 }
 @font-face {
   font-family: 'Montserrat';
-  src: url('fonts/subset-Montserrat-Regular.eot');
-  src: url('fonts/subset-Montserrat-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/subset-Montserrat-Regular.woff2') format('woff2'), url('fonts/subset-Montserrat-Regular.woff') format('woff'), url('fonts/subset-Montserrat-Regular.ttf') format('truetype');
+  src: url('/fonts/subset-Montserrat-Regular.eot');
+  src: url('/fonts/subset-Montserrat-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/subset-Montserrat-Regular.woff2') format('woff2'), url('/fonts/subset-Montserrat-Regular.woff') format('woff'), url('/fonts/subset-Montserrat-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

@@ -17,9 +17,14 @@ gulp.task('compile-less', function() {
 
 /* Task to watch less changes */
 gulp.task( 'watch-less', function() {
-	gulp.watch( 'src/common.blocks/**/*', ['compile-less', 'concat-js'] );
+	gulp.watch( 'src/common.blocks/**/*', ['compile-less', 'concat-js', 'copy-img'] );
 });
 
+gulp.task('copy-img', function(){
+	return gulp.src('src/common.blocks/**/*.{png,jpg}')
+	.pipe(gulp.dest('public/images'));
+  });
+ 
 gulp.task( 'concat-js', function() {
 	return gulp.src('src/common.blocks/js/*.js')
 		.pipe(concat('all.js'))
@@ -27,4 +32,4 @@ gulp.task( 'concat-js', function() {
 });
 
 /* Task when running `gulp` from terminal */
-gulp.task( 'default', [ 'compile-less', 'watch-less', 'concat-js' ]);
+gulp.task( 'default', [ 'compile-less', 'watch-less', 'concat-js', 'copy-img' ]);
