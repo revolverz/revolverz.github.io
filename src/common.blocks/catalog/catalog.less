@@ -38,14 +38,36 @@
         border: 1px solid #e7e7e7;
     }
 
+    &__img {
+        position: relative;
+        left: 25px;
+
+        &_type_marco {
+            margin-right: 1px;
+        }
+
+        &_type_montana {
+            margin-right: 1px;
+        }
+    }
+
     &__skirt-block {
         display: flex;
+
+        &_type_marco {
+            margin-left: -32px;
+        }
+
+        &_type_montana {
+            margin-right: 16px;
+        }
     }
 
     &__skirt-info {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-left: 49px;
     }
 
     &__skirt-text {
@@ -89,9 +111,9 @@
     &__denim-info {
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
         align-items: end;
         margin-left: 32px;
-        justify-content: space-evenly;
     }
 
     &__denim-head {
@@ -99,10 +121,10 @@
     }
 
     &__denim-text {
+        margin-left: 10px;
         color: #999;
         font-size: 12px;
         line-height: 24px;
-        margin-left: 10px;
     }
 
     &__denim-title {
@@ -113,8 +135,8 @@
 
     &__denim-price {
         color: #be926f;
+        font-weight: bold;
         font-size: 16px;
         line-height: 24px;
-        font-weight: bold;
     }
 }

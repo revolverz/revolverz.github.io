@@ -425,10 +425,26 @@
   margin-right: 30px;
   border: 1px solid #e7e7e7;
 }
+.catalog__img {
+  position: relative;
+  left: 25px;
+}
+.catalog__img_type_marco {
+  margin-right: 1px;
+}
+.catalog__img_type_montana {
+  margin-right: 1px;
+}
 .catalog__skirt-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.catalog__skirt-block_type_marco {
+  margin-left: -32px;
+}
+.catalog__skirt-block_type_montana {
+  margin-right: 16px;
 }
 .catalog__skirt-info {
   display: -webkit-box;
@@ -441,6 +457,7 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-left: 49px;
 }
 .catalog__skirt-text {
   color: #999;
@@ -490,13 +507,13 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: end;
   margin-left: 32px;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
 }
 .catalog__denim-head {
   display: -webkit-box;
@@ -504,10 +521,10 @@
   display: flex;
 }
 .catalog__denim-text {
+  margin-left: 10px;
   color: #999;
   font-size: 12px;
   line-height: 24px;
-  margin-left: 10px;
 }
 .catalog__denim-title {
   color: #232323;
@@ -516,9 +533,9 @@
 }
 .catalog__denim-price {
   color: #be926f;
+  font-weight: bold;
   font-size: 16px;
   line-height: 24px;
-  font-weight: bold;
 }
 .catalog-column {
   display: -webkit-box;
