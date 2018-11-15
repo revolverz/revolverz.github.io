@@ -2,11 +2,11 @@
     font-weight: normal;
     font-style: normal;
     font-family: 'FontAwesome';
-    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
-    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
-    url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
-    url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
-    url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    src: url('fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+    url('fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+    url('fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+    url('fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
 }
 
 .mixed-slider {
@@ -85,7 +85,7 @@
 .mixed-slider__img-clock {
     width: 16px;
     margin-right: 5px;
-    background: url(../../plugin-multislider/mixed-slider__img_clock.png) no-repeat center center / contain;
+    background: url(/img/plugin-multislider/mixed-slider__img_clock.png) no-repeat center center / contain;
 }
 
 .mixed-slider__item {

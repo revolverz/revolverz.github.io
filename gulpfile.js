@@ -22,7 +22,7 @@ gulp.task( 'watch-less', function() {
 
 gulp.task('copy-img', function(){
 	return gulp.src('src/common.blocks/**/*.{png,jpg}')
-	.pipe(gulp.dest('public/images'));
+	.pipe(gulp.dest('public/img'));
   });
  
 gulp.task( 'concat-js', function() {

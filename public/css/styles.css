@@ -1,5 +1,5 @@
-@import '../../src/common.blocks/plugin-multislider/css/slider.css';
-@import '../../src/common.blocks/all.css';
+@import 'slider.css';
+@import 'font-awesome.css';
 .header-line {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,7 +31,7 @@
   letter-spacing: 0.3px;
 }
 .logo {
-  background: url(../../src/common.blocks/logo/logo.png) no-repeat center center / contain;
+  background: url(/img/logo/logo.png) no-repeat center center / contain;
 }
 @media only screen and (min-width: 992px) {
   .logo {
@@ -80,7 +80,7 @@
   margin: 15px;
   margin-left: 9px;
   border: none;
-  background: url(../../src/common.blocks/search-form/search-form__img_type_search.png) no-repeat center center / contain;
+  background: url(/img/search-form/search-form__img_type_search.png) no-repeat center center / contain;
 }
 .content {
   font-family: 'Montserrat', sans-serif;
@@ -166,7 +166,7 @@
   width: 17px;
   height: 22px;
   margin-right: 35px;
-  background: url(../../src/common.blocks/cart/cart.png) no-repeat center center / contain;
+  background: url(/img/cart/cart.png) no-repeat center center / contain;
 }
 .burger {
   width: 20px;
@@ -200,34 +200,34 @@
 .main-content__poster-item-one {
   position: relative;
   z-index: 100;
-  font-size: 40px;
   margin-left: -3px;
+  font-size: 40px;
 }
 .main-content__poster-item-two {
   position: relative;
   z-index: 100;
+  margin-left: 8px;
   font-weight: bold;
   font-size: 80px;
   line-height: 71px;
-  margin-left: 8px;
 }
 .main-content__poster-item-three {
   position: relative;
   z-index: 100;
+  margin-left: -6px;
+  letter-spacing: 2.1px;
   font-weight: 600;
   font-size: 73px;
   line-height: 76px;
-  margin-left: -2px;
-  letter-spacing: 0.3px;
 }
 .main-content__poster-item-four {
   position: relative;
   z-index: 100;
+  margin-left: 3px;
   color: #666;
+  letter-spacing: 0.1px;
   font-size: 17px;
   line-height: 24px;
-  letter-spacing: 0.1px;
-  margin-left: 3px;
 }
 .main-content__img {
   display: block;
@@ -238,7 +238,7 @@
   height: 470px;
 }
 .main-content__img_type_fashion-shirts {
-  background: url(../../src/common.blocks/main-content/main-content__img_type_fashion-shirts.png) no-repeat center center / contain;
+  background: url(/img/main-content/main-content__img_type_fashion-shirts.png) no-repeat center center / contain;
 }
 .main-content__img_type_new-prints {
   display: block;
@@ -247,13 +247,13 @@
   left: 400px;
   width: 550px;
   height: 460px;
-  background: url(../../src/common.blocks/main-content/main-content__img_type_two.png) no-repeat center center / contain;
+  background: url(/img/main-content/main-content__img_type_two.png) no-repeat center center / contain;
 }
 .main-content__img_type_sale {
-  background: url(../../src/common.blocks/main-content/main-content__img_type_sale.png) no-repeat center center / contain;
+  background: url(/img/main-content/main-content__img_type_sale.png) no-repeat center center / contain;
 }
 .main-content__img_type_new-swimwear {
-  background: url(../../src/common.blocks/main-content/main-content__img_type_new-swimwear.png) no-repeat center center / contain;
+  background: url(/img/main-content/main-content__img_type_new-swimwear.png) no-repeat center center / contain;
 }
 .main-content__list {
   display: -webkit-box;
@@ -294,7 +294,7 @@
   display: -ms-flexbox;
   display: flex;
   color: white;
-  background: url(../../src/common.blocks/main-content/main-content__type_active-bg.png) no-repeat center center / contain;
+  background: url(/img/main-content/main-content__type_active-bg.png) no-repeat center center / contain;
 }
 .main-content__item_type_last {
   background-size: 0 0.5px, 370px 0;
@@ -323,14 +323,13 @@
   z-index: 76;
   outline: none;
   color: #fff;
-  letter-spacing: 1.1px;
   font-weight: bold;
   font-size: 11px;
   line-height: 41px;
   text-align: center;
   text-decoration: none;
-  background-color: #be926f;
   word-spacing: 1px;
+  background-color: #be926f;
 }
 @media only screen and (max-width: 576px) {
   .button {
@@ -347,14 +346,17 @@
 .button_type_main-content {
   margin-top: 33px;
 }
-.button_type_catalog {
-  font-size: 13px;
-}
 @media only screen and (min-width: 576px) {
   .button_type_catalog {
     width: 130px;
     height: 40px;
-    margin-top: 174px;
+    margin-top: 175px;
+    margin-left: 1px;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 24px;
+    padding-bottom: 5px;
+    padding-right: 8px;
   }
 }
 .button_type_about-us {
@@ -372,13 +374,12 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-bottom: 20px;
 }
 .catalog__shirts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 376px;
+  height: 378px;
   margin-bottom: 20px;
   background-color: ffffff;
 }
@@ -566,9 +567,12 @@
   line-height: 22px;
   text-align: center;
 }
+.catalog-column__title_type_jack-jones {
+  margin-left: 4px;
+}
 .catalog-column__subtitle {
   z-index: 20;
-  margin-top: 5px;
+  margin-top: 8px;
   color: #999;
   font-weight: bold;
   font-size: 12px;
@@ -583,7 +587,7 @@
 }
 .catalog-column__price {
   z-index: 20;
-  margin-bottom: 19px;
+  margin-bottom: 21px;
   color: #be926f;
   font-size: 20px;
   line-height: 24px;
@@ -597,10 +601,11 @@
 .add-wishlist__icon-like {
   display: block;
   width: 17px;
-  background: url(../../src/common.blocks/add-wishlist/add-wishlist__img_type_like.png) no-repeat center center / contain;
+  margin-right: 7px;
+  background: url(/img/add-wishlist/add-wishlist__img_type_like.png) no-repeat center center / contain;
 }
 .add-wishlist__icon-like:hover {
-  background: url(../../src/common.blocks/add-wishlist/add-wishlist__img_type_like-hover.png) no-repeat center center / contain;
+  background: url(/img/add-wishlist/add-wishlist__img_type_like-hover.png) no-repeat center center / contain;
 }
 .add-wishlist__text {
   color: #999;
@@ -641,7 +646,7 @@
   font-size: 17px;
   line-height: 28px;
 }
-.video-1 {
+.video-content {
   margin: 0 auto;
   display: block;
   -o-object-fit: fill;
@@ -692,17 +697,17 @@
 .contact-types__icon_type_phone {
   width: 35px;
   height: 56px;
-  background: url(../../src/common.blocks/contact-types/contacts-types__icon_type_phone.png) no-repeat center center / contain;
+  background: url(/img/contact-types/contacts-types__icon_type_phone.png) no-repeat center center / contain;
 }
 .contact-types__icon_type_location {
   width: 34px;
   height: 49px;
-  background: url(../../src/common.blocks/contact-types/contacts-types__icon_type_location.png) no-repeat center center / contain;
+  background: url(/img/contact-types/contacts-types__icon_type_location.png) no-repeat center center / contain;
 }
 .contact-types__icon_type_mail {
   width: 56px;
   height: 40px;
-  background: url(../../src/common.blocks/contact-types/contacts-types__icon_type_mail.png) no-repeat center center / contain;
+  background: url(/img/contact-types/contacts-types__icon_type_mail.png) no-repeat center center / contain;
 }
 .contact-types__header {
   color: #000;
@@ -764,17 +769,17 @@
 .footer .footer__icon_type_fb {
   width: 9px;
   height: 19px;
-  background: url(../../src/common.blocks/footer/footer__img_type_fb.png) no-repeat center center / contain;
+  background: url(/img/footer/footer__img_type_fb.png) no-repeat center center / contain;
 }
 .footer .footer__icon_type_google {
   width: 18px;
   height: 18px;
-  background: url(../../src/common.blocks/footer/footer__img_type_google.png) no-repeat center center / contain;
+  background: url(/img/footer/footer__img_type_google.png) no-repeat center center / contain;
 }
 .footer .footer__icon_type_tw {
   width: 19px;
   height: 16px;
-  background: url(../../src/common.blocks/footer/footer__img_type_tw.png) no-repeat center center / contain;
+  background: url(/img/footer/footer__img_type_tw.png) no-repeat center center / contain;
 }
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
