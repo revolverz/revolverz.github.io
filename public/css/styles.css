@@ -454,12 +454,12 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  margin-top: 2px;
   margin-left: 49px;
 }
 .catalog__skirt-text {
+  position: relative;
+  top: 3px;
   color: #999;
   font-size: 12px;
   line-height: 24px;
@@ -477,7 +477,6 @@
 .catalog__skirt-price {
   margin-right: 5px;
   color: #be926f;
-  font-weight: bold;
   font-size: 14px;
   line-height: 24px;
 }
@@ -485,6 +484,7 @@
   -webkit-box-ordinal-group: 0;
   -ms-flex-order: -1;
   order: -1;
+  margin-right: 9px;
   color: #999;
   text-decoration: line-through;
 }
@@ -507,9 +507,9 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: end;

@@ -66,11 +66,13 @@
     &__skirt-info {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        margin-top: 2px;
         margin-left: 49px;
     }
 
     &__skirt-text {
+        position: relative;
+        top: 3px;
         color: #999;
         font-size: 12px;
         line-height: 24px;
@@ -89,12 +91,12 @@
     &__skirt-price {
         margin-right: 5px;
         color: #be926f;
-        font-weight: bold;
         font-size: 14px;
         line-height: 24px;
 
         &_type_old {
             order: -1;
+            margin-right: 9px;
             color: #999;
             text-decoration: line-through;
         }
@@ -111,7 +113,7 @@
     &__denim-info {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: end;
         margin-left: 32px;
     }
