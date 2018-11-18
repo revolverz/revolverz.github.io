@@ -1,5 +1,5 @@
-@import 'slider.css';
 @import 'font-awesome.css';
+@import 'slider.css';
 .header-line {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -350,20 +350,23 @@
   .button_type_catalog {
     width: 130px;
     height: 40px;
+    padding-right: 8px;
+    padding-bottom: 5px;
     margin-top: 175px;
     margin-left: 1px;
     font-weight: bold;
     font-size: 13px;
     line-height: 24px;
-    padding-bottom: 5px;
-    padding-right: 8px;
   }
 }
 .button_type_about-us {
   width: 110px;
   height: 40px;
-  margin-bottom: 53px;
+  margin-bottom: 50px;
   border: 2px solid #be926f;
+  letter-spacing: 0.5px;
+  line-height: 36px;
+  word-spacing: 3px;
   background-color: rgba(255, 255, 255, 0);
 }
 .catalog {
@@ -520,7 +523,13 @@
   display: -ms-flexbox;
   display: flex;
 }
+.catalog__denim-hr {
+  position: relative;
+  bottom: 7px;
+}
 .catalog__denim-text {
+  position: relative;
+  top: -10px;
   margin-left: 10px;
   color: #999;
   font-size: 12px;
@@ -530,8 +539,12 @@
   color: #232323;
   font-size: 20px;
   line-height: 22px;
+  margin-top: -5px;
 }
 .catalog__denim-price {
+  position: relative;
+  top: 6px;
+  left: -3px;
   color: #be926f;
   font-weight: bold;
   font-size: 16px;
@@ -649,7 +662,7 @@
   margin-bottom: 40px;
 }
 .about-us__header {
-  margin-top: 61px;
+  margin-top: 44px;
   color: #fff;
   font-weight: bold;
   font-size: 40px;
@@ -662,6 +675,12 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 28px;
+  margin-top: -15px;
+  letter-spacing: 0.15px;
+}
+.about-us__hr {
+  position: relative;
+  bottom: 5px;
 }
 .video-content {
   margin: 0 auto;
@@ -679,7 +698,7 @@
   -ms-flex-align: center;
   align-items: center;
   height: 241px;
-  border: 1px solid #999;
+  border-top: 1px solid #e7e7e7;
   font-family: 'Montserrat';
 }
 .contact-types__section {
@@ -700,13 +719,29 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   width: 180px;
+  font-weight: bold;
   text-align: center;
+}
+.contact-types__block_type_phone {
+  height: 149px;
+  margin-left: 89px;
+}
+.contact-types__block_type_location {
+  height: 149px;
+  margin-top: 2px;
+  margin-right: 1px;
+}
+.contact-types__block_type_mail {
+  height: 149px;
+  margin-top: 5px;
+  margin-right: 103px;
 }
 .contact-types__icon {
   display: block;
@@ -727,10 +762,14 @@
   background: url(/img/contact-types/contacts-types__icon_type_mail.png) no-repeat center center / contain;
 }
 .contact-types__header {
+  margin-top: 2px;
   color: #000;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
+}
+.contact-types__header_type_mail {
+  margin-top: 10px;
 }
 .contact-types__phone-text {
   width: 211px;
@@ -740,11 +779,15 @@
   line-height: 34px;
 }
 .contact-types__location-text {
+  margin-bottom: 4px;
+  margin-left: -5px;
   color: #666;
+  letter-spacing: 0.2px;
   font-size: 14px;
   line-height: 30px;
 }
 .contact-types__mail-text {
+  margin-bottom: 7px;
   color: #be926f;
   font-size: 14px;
   line-height: 30px;
@@ -760,7 +803,9 @@
   -ms-flex-align: center;
   align-items: center;
   height: 71px;
-  border: 1px solid #999;
+  border: 1px solid #e7e7e7;
+  font-size: 13px;
+  line-height: 24px;
 }
 .footer__social-media {
   display: -webkit-box;
@@ -768,17 +813,34 @@
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  width: 124px;
+  width: 147px;
+  margin-right: -59px;
 }
 .footer__rights {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #ccc;
-  font-size: 13px;
-  line-height: 24px;
+  font-weight: bold;
+}
+.footer__rights-title {
+  margin-left: -68px;
+  letter-spacing: 0.7px;
+}
+.footer__rights-alignment {
+  margin-left: 1px;
+  letter-spacing: 0.8px;
 }
 .footer__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 300px;
+  margin-left: -117px;
   color: #999;
-  font-size: 13px;
-  line-height: 24px;
 }
 .footer .footer__icon {
   display: block;

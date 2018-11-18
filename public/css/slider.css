@@ -11,6 +11,8 @@
 
 .mixed-slider {
     border-top: 1px solid #e7e7e7;
+    height: 436px;
+    margin-bottom: 40px;
 }
 
 .mixed-slider__head {
@@ -40,7 +42,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    justify-content: space-evenly;
     align-items: center;
     height: 166px;
     font-weight: bold;
@@ -50,6 +51,12 @@
     letter-spacing: 1px;
     font-size: 12px;
     line-height: 24px;
+    position: relative;
+    bottom: 8px;
+}
+
+.about-us__text_type_alignment {
+    margin-left: 1px;
 }
 
 .mixed-slider__text_type_travel {
@@ -66,17 +73,25 @@
 
 .mixed-slider__text_type_life {
     color: #538dc8;
+    letter-spacing: 1.2px;
 }
 
 .mixed-slider__title {
+    margin-bottom: 17px;
     color: #000;
     font-size: 18px;
     line-height: 24px;
     text-align: center;
 }
 
+.mixed-slider__title-fashion-top {
+    margin-left: 5px;
+    letter-spacing: 0.3px;
+}
+
 .mixed-slider__date {
     display: flex;
+    margin-right: 8px;
     color: #999;
     font-size: 14px;
     line-height: 24px;
@@ -88,12 +103,20 @@
     background: url(/img/plugin-multislider/mixed-slider__img_clock.png) no-repeat center center / contain;
 }
 
+.mixed-slider__time {
+    color: #999;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    line-height: 24px;
+    text-align: center;
+}
+
 .mixed-slider__item {
     display: inline-block;
     position: relative;
     overflow: hidden;
     width: 270px;
-    height: 100%;
+    height: 376px;
     margin-right: 30px;
     border-bottom: 1px solid #e7e7e7;
     vertical-align: top;
@@ -125,14 +148,13 @@
 .fa-caret-left:before {
     position: absolute;
     top: 9px;
-    content: '\f0da';
 }
 
 .fa-caret-right:before {
     position: absolute;
-    content: '\f0da';
-    right: 0px;
     top: 9px;
+    right: 0;
+    content: '\f0da';
 }
 
 .mixed-slider__img-title img {
