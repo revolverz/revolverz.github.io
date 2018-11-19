@@ -94,6 +94,11 @@
         width: 50%;
     }
 
+
+    &__list :last-child {
+        background-position: left top, right top;
+    }
+
     &__item {
         display: flex;
         position: relative;
@@ -111,12 +116,8 @@
             color: white;
             background: url(/img/main-content/main-content__type_active-bg.png) no-repeat center center / contain;
         }
-
-        &_type_last {
-            background-size: 0 0.5px, 370px 0;
-        }
     }
-
+   
     &__item-text {
         margin-left: 60px;
         font-weight: 600;
