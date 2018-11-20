@@ -211,6 +211,9 @@
   font-size: 80px;
   line-height: 71px;
 }
+.main-content__poster-item-two_type_collection {
+  margin-left: 0;
+}
 .main-content__poster-item-three {
   position: relative;
   z-index: 100;
@@ -662,7 +665,7 @@
   margin-bottom: 40px;
 }
 .about-us__header {
-  margin-top: 44px;
+  margin-top: 41px;
   color: #fff;
   font-weight: bold;
   font-size: 40px;
@@ -797,8 +800,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -813,34 +817,34 @@
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  width: 147px;
-  margin-right: -59px;
+  width: 160px;
+  position: relative;
+  right: 57px;
 }
 .footer__rights {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  left: 57px;
   color: #ccc;
-  font-weight: bold;
-}
-.footer__rights-title {
-  margin-left: -68px;
   letter-spacing: 0.7px;
-}
-.footer__rights-alignment {
-  margin-left: 1px;
-  letter-spacing: 0.8px;
+  font-weight: bold;
 }
 .footer__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  right: 51px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 300px;
-  margin-left: -117px;
   color: #999;
+  letter-spacing: 1px;
+  font-size: 13px;
+  line-height: 24px;
 }
 .footer .footer__icon {
   display: block;

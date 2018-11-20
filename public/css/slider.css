@@ -123,6 +123,10 @@
     white-space: normal;
 }
 
+.mixed-slider__item:hover {
+    border-bottom: 1px solid #be926f;
+}
+
 @media (max-width: 991px) {
     .mixed-slider__item {
         width: 50%;
