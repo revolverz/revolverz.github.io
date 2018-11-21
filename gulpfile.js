@@ -3,6 +3,7 @@ var less         = require('gulp-less');
 var watch        = require('gulp-watch');
 var concat       = require('gulp-concat');
 var autoprefixer = require('gulp-autoprefixer');
+var gls          = require('gulp-live-server');
 
 /* Task to compile less */
 gulp.task('compile-less', function() {
@@ -31,5 +32,15 @@ gulp.task( 'concat-js', function() {
 		.pipe(gulp.dest('public/js/'));
 });
 
+gulp.task('live-server', function() {
+	var server = gls.static('public');
+	server.start();
+ 
+	//use gulp.watch to trigger server actions(notify, start or stop)
+	gulp.watch(['public/**/*.css', 'public/**/*.html'], function (file) {
+	 server.notify.apply(server, [file]);
+	});
+ });
+
 /* Task when running `gulp` from terminal */
-gulp.task( 'default', [ 'compile-less', 'watch-less', 'concat-js', 'copy-img' ]);
+gulp.task( 'default', [ 'compile-less', 'watch-less', 'concat-js', 'copy-img', 'live-server' ]);

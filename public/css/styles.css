@@ -169,6 +169,7 @@
   background: url(/img/cart/cart.png) no-repeat center center / contain;
 }
 .burger {
+  opacity: 0;
   width: 20px;
   height: 20px;
   margin-left: 30px;

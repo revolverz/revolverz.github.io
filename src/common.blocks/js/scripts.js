@@ -1,25 +1,19 @@
-var items = [
-    '.j-main-content__item-01',
-    '.j-main-content__item-02',
-    '.j-main-content__item-03',
-    '.j-main-content__item-04'
-];
+$(function(){
 
-var posters = [
-    '.j-main-content__poster-01',
-    '.j-main-content__poster-02',
-    '.j-main-content__poster-03',
-    '.j-main-content__poster-04'
-];
+	$(".main-content").on("mouseover", ".j-main-content__item", function(){
 
-var changeСolor = 'main-content__poster_type_active-poster';
+		var $tabs = $('.j-main-content__item');
+        var $cont = $(".j-main-content__poster");
+        var $numbers = $(".j-main-content__number");
 
-for (i = 0; i < items.length; i++) {
-    $(items[i]).on('mouseover', function(event) {
-        n = $(this).index('.j-change-color');
-        $(event.target).addClass(changeСolor);
-    });
-    $(items[i]).on('mouseout', function(event) {
-        $(event.target).removeClass(changeСolor[n]);
-    });
-}
+		$tabs.removeClass("main-content__item_type_active-bg");
+        $cont.removeClass("main-content__poster_type_active-poster");
+        $numbers.removeClass("main-content__number_type_active-number")
+        
+		$(this).addClass("main-content__item_type_active-bg");
+        $cont.eq($(this).index()).addClass("main-content__poster_type_active-poster");
+        $numbers.eq($(this).index()).addClass(" main-content__number_type_active-number");
+
+		return false;
+	});
+});
