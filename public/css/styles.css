@@ -305,7 +305,7 @@
   left: 400px;
   width: 550px;
   height: 460px;
-  background: url(/img/main-content/main-content__img_type_two.png) no-repeat center center / contain;
+  background: url(/img/main-content/main-content__img_type_new-color.png) no-repeat center center / contain;
 }
 .main-content__img_type_sale {
   background: url(/img/main-content/main-content__img_type_sale.png) no-repeat center center / contain;
@@ -417,11 +417,11 @@
 .button_type_about-us {
   width: 110px;
   height: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 46px;
   border: 2px solid #be926f;
   letter-spacing: 0.5px;
-  line-height: 36px;
-  word-spacing: 3px;
+  line-height: 43px;
+  word-spacing: 2px;
   background-color: rgba(255, 255, 255, 0);
 }
 .catalog {

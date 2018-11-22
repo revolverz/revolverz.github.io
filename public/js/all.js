@@ -1,6 +1,6 @@
-$(document).ready(function(){
-	$('.burger').click(function(){
-		$(this).toggleClass('open');
+$( function () {
+	$( '.burger' ).click( function (){
+		$( this ).toggleClass( 'open' );
 	});
 });
 /*
@@ -374,22 +374,34 @@ $(document).ready(function(){
     }
 })(jQuery);
 
-$(function(){
+function preloadImages() {
+        {
+          for( var i = 0; i<arguments.length; i++ )
+            $( '<img />' ).attr( 'src', arguments[i] );
+        }
+        };
 
-	$(".main-content").on("mouseover", ".j-main-content__item", function(){
+preloadImages( 'img/main-content/main-content__img_type_fashion-shirts.png',
+              '/img/main-content/main-content__img_type_new-color.png',
+              '/img/main-content/main-content__img_type_sale.png',
+              '/img/main-content/main-content__img_type_new-swimwear.png' );
 
-		var $items = $('.j-main-content__item');
-        var $posters = $(".j-main-content__poster");
-        var $numbers = $(".j-main-content__number");
+$( function () {
 
-		$items.removeClass("main-content__item_type_active-bg");
-        $posters.removeClass("main-content__poster_type_active-poster");
-        $numbers.removeClass("main-content__number_type_active-number")
+	$( '.main-content' ).on( 'mouseover', '.j-main-content__item', function () {
+
+		var $items = $( '.j-main-content__item' );
+        var $posters = $( '.j-main-content__poster' );
+        var $numbers = $( '.j-main-content__number' );
+
+		$items.removeClass( 'main-content__item_type_active-bg' );
+        $posters.removeClass( 'main-content__poster_type_active-poster' );
+        $numbers.removeClass( 'main-content__number_type_active-number' )
         
-		$(this).addClass("main-content__item_type_active-bg");
-        $posters.eq($(this).index()).addClass("main-content__poster_type_active-poster");
-        $numbers.eq($(this).index()).addClass(" main-content__number_type_active-number");
+		$( this ).addClass( 'main-content__item_type_active-bg' );
+        $posters.eq($(this).index()).addClass( 'main-content__poster_type_active-poster' );
+        $numbers.eq($(this).index()).addClass(' main-content__number_type_active-number');
 
 		return false;
-	});
+    });   
 });
