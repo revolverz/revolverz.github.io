@@ -697,6 +697,7 @@
   font-weight: bold;
   font-size: 13px;
   line-height: 24px;
+  text-decoration: none;
 }
 .about-us {
   display: -webkit-box;
@@ -832,6 +833,7 @@
   letter-spacing: 0.6px;
   font-size: 24px;
   line-height: 34px;
+  text-decoration: none;
 }
 .contact-types__location-text {
   margin-bottom: 4px;

@@ -4,6 +4,7 @@ var watch        = require('gulp-watch');
 var concat       = require('gulp-concat');
 var autoprefixer = require('gulp-autoprefixer');
 var gls          = require('gulp-live-server');
+var imagemin     = require('gulp-imagemin');
 
 /* Task to compile less */
 gulp.task('compile-less', function() {
@@ -23,7 +24,7 @@ gulp.task( 'watch-less', function() {
 
 gulp.task('copy-img', function(){
 	return gulp.src('src/common.blocks/**/*.{png,jpg}')
-	.pipe(gulp.dest('public/img'));
+	.pipe(gulp.dest('public/img/'));
   });
  
 gulp.task( 'concat-js', function() {
@@ -42,5 +43,13 @@ gulp.task('live-server', function() {
 	});
  });
 
+gulp.task('compress', function() {
+    gulp.src('public/img/**/*.{png,jpg}')
+    .pipe(imagemin({
+	  progressive: true
+    }))
+    .pipe(gulp.dest('public/img/'));
+});
+
 /* Task when running `gulp` from terminal */
-gulp.task( 'default', [ 'compile-less', 'watch-less', 'concat-js', 'copy-img', 'live-server' ]);
+gulp.task( 'default', [ 'compile-less', 'watch-less', 'concat-js', 'copy-img', 'live-server', 'compress' ]);
