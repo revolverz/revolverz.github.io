@@ -22,44 +22,46 @@
         font-weight: bold;
         text-align: center;
 
-        &_type_phone {
-            height: 149px;
-            margin-left: 89px;
-        }
+        &_type {
+            &_phone {
+                height: 149px;
+                margin-left: 89px;
+            }
 
-        &_type_location {
-            height: 149px;
-            margin-top: 2px;
-            margin-right: 1px;
-        }
+            &_location {
+                height: 149px;
+                margin-top: 2px;
+                margin-right: 1px;
+            }
 
-        &_type_mail {
-            height: 149px;
-            margin-top: 5px;
-            margin-right: 103px;
+            &_mail {
+                height: 149px;
+                margin-top: 5px;
+                margin-right: 103px;
+            }
         }
     }
 
     &__icon {
         display: block;
-    }
 
-    &__icon_type_phone {
-        width: 35px;
-        height: 56px;
-        background: url(/img/contact-types/contacts-types__icon_type_phone.png) no-repeat center center / contain;
-    }
+        &_type_phone {
+            width: 35px;
+            height: 56px;
+            background: url(/img/contact-types/contacts-types__icon_type_phone.png) no-repeat center center / contain;
+        }
 
-    &__icon_type_location {
-        width: 34px;
-        height: 49px;
-        background: url(/img/contact-types/contacts-types__icon_type_location.png) no-repeat center center / contain;
-    }
+        &_type_location {
+            width: 34px;
+            height: 49px;
+            background: url(/img/contact-types/contacts-types__icon_type_location.png) no-repeat center center / contain;
+        }
 
-    &__icon_type_mail {
-        width: 56px;
-        height: 40px;
-        background: url(/img/contact-types/contacts-types__icon_type_mail.png) no-repeat center center / contain;
+        &_type_mail {
+            width: 56px;
+            height: 40px;
+            background: url(/img/contact-types/contacts-types__icon_type_mail.png) no-repeat center center / contain;
+        }
     }
 
     &__header {

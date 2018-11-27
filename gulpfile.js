@@ -7,14 +7,14 @@ var gls          = require('gulp-live-server');
 var imagemin     = require('gulp-imagemin');
 
 /* Task to compile less */
-gulp.task('compile-less', function() {
-	gulp.src('src/bundle/styles.less')
+gulp.task( 'compile-less', function() {
+	gulp.src( 'src/bundle/styles.less' )
 		.pipe( less() )
 		.pipe( autoprefixer({
-			browsers: ['last 5 versions'],
+			browsers: [ 'last 5 versions' ],
 			cascade: false
 		  }))
-		.pipe( gulp.dest('public/css/') );
+		.pipe( gulp.dest( 'public/css/' ) );
 });
 
 /* Task to watch less changes */
@@ -22,7 +22,7 @@ gulp.task( 'watch-less', function() {
 	gulp.watch( 'src/common.blocks/**/*', ['compile-less', 'concat-js', 'copy-img'] );
 });
 
-gulp.task('copy-img', function(){
+gulp.task( 'copy-img', function(){
 	return gulp.src('src/common.blocks/**/*.{png,jpg}')
 	.pipe(gulp.dest('public/img/'));
   });
@@ -33,22 +33,22 @@ gulp.task( 'concat-js', function() {
 		.pipe(gulp.dest('public/js/'));
 });
 
-gulp.task('live-server', function() {
+gulp.task( 'live-server', function() {
 	var server = gls.static('public');
 	server.start();
  
 	//use gulp.watch to trigger server actions(notify, start or stop)
-	gulp.watch(['public/**/*.css', 'public/**/*.html'], function (file) {
+	gulp.watch([ 'public/**/*.css', 'public/**/*.html' ], function (file) {
 	 server.notify.apply(server, [file]);
 	});
  });
 
-gulp.task('compress', function() {
-    gulp.src('public/img/**/*.{png,jpg}')
+gulp.task( 'compress', function() {
+    gulp.src( 'public/img/**/*.{png,jpg}' )
     .pipe(imagemin({
 	  progressive: true
     }))
-    .pipe(gulp.dest('public/img/'));
+    .pipe(gulp.dest( 'public/img/' ));
 });
 
 /* Task when running `gulp` from terminal */

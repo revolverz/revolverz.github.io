@@ -76,7 +76,7 @@
   position: relative;
   top: 11px;
   left: 24px;
-  color: #666666;
+  color: #666;
   font-size: 13px;
   line-height: 24px;
 }
@@ -94,10 +94,10 @@
   position: relative;
   top: 10px;
   left: 25px;
+  font-weight: bold;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  font-weight: bold;
 }
 .search-form.focus > .search-form__label {
   opacity: 0;
@@ -107,8 +107,8 @@
 }
 @font-face {
   font-family: 'Montserrat';
-  src: url('/fonts/subset-Montserrat-Regular.eot');
-  src: url('/fonts/subset-Montserrat-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/subset-Montserrat-Regular.woff2') format('woff2'), url('/fonts/subset-Montserrat-Regular.woff') format('woff'), url('/fonts/subset-Montserrat-Regular.ttf') format('truetype');
+  src: url('fonts/subset-Montserrat-Regular.eot');
+  src: url('fonts/subset-Montserrat-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/subset-Montserrat-Regular.woff2') format('woff2'), url('fonts/subset-Montserrat-Regular.woff') format('woff'), url('fonts/subset-Montserrat-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -201,11 +201,11 @@
   height: 16px;
   border-radius: 8px;
   color: #232323;
+  font-weight: bold;
   font-size: 10px;
   line-height: 16px;
   text-align: center;
   background-color: #be926f;
-  font-weight: bold;
 }
 .burger {
   position: relative;
@@ -627,10 +627,10 @@
   line-height: 24px;
 }
 .catalog__denim-title {
+  margin-top: -5px;
   color: #232323;
   font-size: 20px;
   line-height: 22px;
-  margin-top: -5px;
 }
 .catalog__denim-price {
   position: relative;
@@ -938,8 +938,8 @@
   line-height: 24px;
 }
 .footer__text {
+  color: #999;
   text-decoration: none;
-  color: #999999;
 }
 .footer .footer__icon {
   display: block;
