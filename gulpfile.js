@@ -28,7 +28,7 @@ gulp.task( 'copy-img', function(){
   });
  
 gulp.task( 'concat-js', function() {
-	return gulp.src('src/common.blocks/js/*.js')
+		return gulp.src('src/common.blocks/js/*.js')
 		.pipe(concat('all.js'))
 		.pipe(gulp.dest('public/js/'));
 });
