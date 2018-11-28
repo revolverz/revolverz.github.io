@@ -791,7 +791,7 @@
   align-items: center;
   height: 241px;
   border-top: 1px solid #e7e7e7;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
 }
 .contact-types__section {
   display: -webkit-box;
@@ -899,6 +899,7 @@
   height: 71px;
   border: 1px solid #e7e7e7;
   font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
   line-height: 24px;
 }
 .footer__social-media {
@@ -906,7 +907,7 @@
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  right: 57px;
+  right: 63px;
   -ms-flex-pack: distribute;
   justify-content: space-around;
   width: 160px;
