@@ -1,8 +1,14 @@
 .main-content {
-    display: flex;
-    height: 480px;
-    margin-bottom: 20px;
-    background-color: #e7e7e7;
+    .sm ({
+        display: flex;
+        flex-direction: column;
+        height: 480px;
+        margin-bottom: 20px;
+        background-color: #e7e7e7;
+    });
+    .xl ({
+        flex-direction: row;
+    });
 
     &__poster {
         display: none;
@@ -15,9 +21,16 @@
     }
 
     &__poster-items {
-        margin-top: 123px;
-        margin-left: 70px;
-        color: #232323;
+        .sm ({
+            height: 214px;
+            margin-top: 35px;
+            margin-left: 40px;
+            color: #232323;
+        });
+        .xl ({
+            margin-top: 123px;
+            margin-left: 70px;
+        });
     }
 
     &__poster-item-one {
@@ -25,15 +38,26 @@
         z-index: 100;
         margin-left: -3px;
         font-size: 40px;
+
+        &_type-sale {
+            .sm ({
+               display: none;
+            });
+        }
     }
 
     &__poster-item-two {
-        position: relative;
-        z-index: 100;
-        margin-left: 8px;
-        font-weight: bold;
-        font-size: 80px;
-        line-height: 71px;
+        .sm ({
+            position: relative;
+            z-index: 100;
+            margin-left: 8px;
+            font-weight: bold;
+            font-size: 55px;
+            line-height: 71px;
+        });
+        .xl ({
+            font-size: 80px;
+        });
 
         &_type_collection {
             margin-left: 0;
@@ -41,13 +65,18 @@
     }
 
     &__poster-item-three {
-        position: relative;
-        z-index: 100;
-        margin-left: -6px;
-        letter-spacing: 2.1px;
-        font-weight: 600;
-        font-size: 73px;
-        line-height: 76px;
+        .sm ({
+            position: relative;
+            z-index: 100;
+            margin-left: -6px;
+            letter-spacing: 2.1px;
+            font-weight: 600;
+            font-size: 55px;
+            line-height: 76px;
+        });
+        .xl ({
+            font-size: 73px;
+        });
     }
 
     &__poster-item-four {
@@ -61,26 +90,52 @@
     }
 
     &__img {
-        display: block;
-        position: absolute;
-        bottom: 0;
-        left: 400px;
-        width: 370px;
-        height: 470px;
+        .sm ({
+            display: block;
+            position: absolute;
+            bottom: -80px;
+            left: 365px;
+            width: 200px;
+            height: 350px;
+        });
+        .xl ({
+            bottom: 0;
+            left: 400px;
+            width: 370px;
+            height: 470px;
+        });
 
         &_type {
             &_fashion-shirts {
+                .sm ({
+                left: 281px;
+                width: 230px;
                 background: url(/img/main-content/main-content__img_type_fashion-shirts.png) no-repeat center center / contain;
+                });
+                .xl ({
+                    bottom: 0;
+                    left: 400px;
+                    width: 370px;
+                    height: 470px;
+                });
+               
             }
 
             &_new-prints {
-                display: block;
-                position: absolute;
-                bottom: 61px;
-                left: 400px;
-                width: 550px;
-                height: 460px;
-                background: url(/img/main-content/main-content__img_type_new-color.png) no-repeat center center / contain;
+                .sm ({
+                    display: block;
+                    position: absolute;
+                    bottom: -26px;
+                    left: 248px;
+                    width: 334px;
+                    height: 320px;
+                    background: url(/img/main-content/main-content__img_type_new-color.png) no-repeat center center / contain;
+                });
+                .xl ({
+                    width: 550px;
+                    height: 460px;
+                    bottom: 60px;
+                });
             }
 
             &_sale {
@@ -94,10 +149,16 @@
     }
 
     &__list {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        width: 50%;
+        .sm ({
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            width: 25%;
+        });
+        .xl ({
+            flex-direction: column;
+            width: 50%;
+        });
     }
 
     &__list :last-child {
@@ -117,28 +178,53 @@
         background-repeat: no-repeat, no-repeat;
 
         &_type_active-bg {
-            display: flex;
-            color: white;
-            background: url(/img/main-content/main-content__type_active-bg.png) no-repeat center center / contain;
+            .sm ({
+                display: flex;
+                color: white;
+                background: none;
+            });
+            .xl ({
+                background: url(/img/main-content/main-content__type_active-bg.png) no-repeat center center / contain;
+            });
         }
     }
 
     &__item-text {
-        margin-left: 60px;
-        font-weight: 600;
-        font-size: 17px;
+        .sm ({
+            position: relative;
+            top: 77px;
+            left: -15px;
+            width: 120px;
+            margin-left: 25px;
+            font-weight: 600;
+            font-size: 17px;
+        });
+        .xl ({
+            top: 0;
+            left: 0;
+            width: auto;
+            margin-left: 60px;
+            font-weight: 600;
+            font-size: 17px;
+        });
     }
 
     &__number {
-        display: none;
-        position: absolute;
-        width: 100%;
-        color: #eebe98;
-        font-weight: bold;
-        font-size: 120px;
-        line-height: 20px;
-        text-align: center;
-        opacity: 0.2;
+        .sm ({
+            display: none;
+            position: absolute;
+            width: 100%;
+            margin-top: -15px;
+            color: #eebe98;
+            font-weight: bold;
+            font-size: 80px;
+            line-height: 20px;
+            text-align: center;
+            opacity: 0.2;
+        });
+        .xl ({
+            font-size: 120px;
+        });
 
         &_type_active-number {
             display: block;
