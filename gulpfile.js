@@ -68,4 +68,4 @@ gulp.task( 'compress-css', function() {
 });
 
 /* Task when running `gulp` from terminal */
-gulp.task( 'default', [ 'compile-less', 'watch-less', 'concat-js', 'compress-js',  'copy-img', 'live-server', 'compress-css' ]);
+gulp.task( 'default', [ 'compile-less', 'watch-less', 'concat-js', 'compress-js',  'copy-img', 'live-server' ]);
