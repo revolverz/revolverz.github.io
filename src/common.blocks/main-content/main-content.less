@@ -22,7 +22,7 @@
 
     &__poster-items {
         .sm ({
-            height: 214px;
+            height: 240px;
             margin-top: 35px;
             margin-left: 40px;
             color: #232323;
@@ -41,7 +41,10 @@
 
         &_type-sale {
             .sm ({
-               display: none;
+                display: none;
+            });
+            .xl ({
+                display: block;
             });
         }
     }
@@ -50,10 +53,10 @@
         .sm ({
             position: relative;
             z-index: 100;
-            margin-left: 8px;
             font-weight: bold;
-            font-size: 55px;
+            font-size: 40px;
             line-height: 71px;
+            margin-left: -6px;
         });
         .xl ({
             font-size: 80px;
@@ -71,7 +74,7 @@
             margin-left: -6px;
             letter-spacing: 2.1px;
             font-weight: 600;
-            font-size: 55px;
+            font-size: 40px;
             line-height: 76px;
         });
         .xl ({
@@ -108,9 +111,9 @@
         &_type {
             &_fashion-shirts {
                 .sm ({
-                left: 281px;
-                width: 230px;
-                background: url(/img/main-content/main-content__img_type_fashion-shirts.png) no-repeat center center / contain;
+                    left: 281px;
+                    width: 230px;
+                    background: url(/img/main-content/main-content__img_type_fashion-shirts.png) no-repeat center center / contain;
                 });
                 .xl ({
                     bottom: 0;
@@ -118,7 +121,6 @@
                     width: 370px;
                     height: 470px;
                 });
-               
             }
 
             &_new-prints {
@@ -132,9 +134,10 @@
                     background: url(/img/main-content/main-content__img_type_new-color.png) no-repeat center center / contain;
                 });
                 .xl ({
+                    bottom: 60px;
                     width: 550px;
                     height: 460px;
-                    bottom: 60px;
+                    left: 350px;
                 });
             }
 
@@ -153,7 +156,6 @@
             display: flex;
             flex-direction: row;
             align-items: flex-end;
-            width: 25%;
         });
         .xl ({
             flex-direction: column;
@@ -166,16 +168,22 @@
     }
 
     &__item {
-        display: flex;
-        position: relative;
-        justify-content: flex-start;
-        align-items: center;
-        width: 390px;
-        height: 25%;
-        background: linear-gradient(#cbcbcb, #cbcbcb), linear-gradient(#cbcbcb, #cbcbcb);
-        background-position: left bottom, right bottom;
-        background-size: 0 0.5px, 370px 1px;
-        background-repeat: no-repeat, no-repeat;
+        .sm ({
+            display: flex;
+            position: relative;
+            justify-content: flex-start;
+            align-items: center;
+            width: 390px;
+            height: 25%;
+            background: none;
+           
+        });
+        .xl ({
+            background: linear-gradient(#cbcbcb, #cbcbcb), linear-gradient(#cbcbcb, #cbcbcb);
+            background-position: left bottom, right bottom;
+            background-size: 0 0.5px, 370px 1px;
+            background-repeat: no-repeat, no-repeat;
+        });
 
         &_type_active-bg {
             .sm ({
@@ -193,20 +201,30 @@
         .sm ({
             position: relative;
             top: 77px;
-            left: -15px;
+            left: -10px;
             width: 120px;
             margin-left: 25px;
             font-weight: 600;
-            font-size: 17px;
+            font-size: 15px;
+            height: 68px;
         });
         .xl ({
             top: 0;
             left: 0;
             width: auto;
-            margin-left: 60px;
-            font-weight: 600;
             font-size: 17px;
+            height: auto;
+            margin-left: 60px;
         });
+
+        &_type_new-color {
+            .sm ({
+                flex-grow:1;
+            });
+            .xl ({
+                flex-grow:0;
+            });
+        }
     }
 
     &__number {
@@ -214,16 +232,22 @@
             display: none;
             position: absolute;
             width: 100%;
-            margin-top: -15px;
             color: #eebe98;
             font-weight: bold;
             font-size: 80px;
             line-height: 20px;
             text-align: center;
             opacity: 0.2;
+            top: 105px;
+            left: -13px;
+          
         });
         .xl ({
             font-size: 120px;
+            top: auto;
+            left: auto;
+
+        
         });
 
         &_type_active-number {
