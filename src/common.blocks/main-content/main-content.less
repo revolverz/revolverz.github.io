@@ -39,13 +39,24 @@
         margin-left: -3px;
         font-size: 40px;
 
-        &_type-sale {
-            .sm ({
-                display: none;
-            });
-            .xl ({
-                display: block;
-            });
+        &_type {
+            &_sale {
+                .sm ({
+                    display: none;
+                });
+                .xl ({
+                    display: block;
+                });
+            }
+
+            &_new-swimwear {
+                .sm ({
+                    display: none;
+                });
+                .xl ({
+                    display: block;
+                });
+            }
         }
     }
 
@@ -56,7 +67,6 @@
             font-weight: bold;
             font-size: 40px;
             line-height: 71px;
-            margin-left: -6px;
         });
         .xl ({
             font-size: 80px;
@@ -71,7 +81,6 @@
         .sm ({
             position: relative;
             z-index: 100;
-            margin-left: -6px;
             letter-spacing: 2.1px;
             font-weight: 600;
             font-size: 40px;
@@ -80,6 +89,15 @@
         .xl ({
             font-size: 73px;
         });
+
+        &_type_sale {
+            .sm ({
+                line-height: 60px;
+            });
+            .xl ({
+                line-height: 76px;
+            });
+        }
     }
 
     &__poster-item-four {
@@ -135,9 +153,9 @@
                 });
                 .xl ({
                     bottom: 60px;
+                    left: 350px;
                     width: 550px;
                     height: 460px;
-                    left: 350px;
                 });
             }
 
@@ -176,7 +194,6 @@
             width: 390px;
             height: 25%;
             background: none;
-           
         });
         .xl ({
             background: linear-gradient(#cbcbcb, #cbcbcb), linear-gradient(#cbcbcb, #cbcbcb);
@@ -203,26 +220,26 @@
             top: 77px;
             left: -10px;
             width: 120px;
+            height: 68px;
             margin-left: 25px;
             font-weight: 600;
             font-size: 15px;
-            height: 68px;
         });
         .xl ({
             top: 0;
             left: 0;
             width: auto;
-            font-size: 17px;
             height: auto;
             margin-left: 60px;
+            font-size: 17px;
         });
 
         &_type_new-color {
             .sm ({
-                flex-grow:1;
+                flex-grow: 1;
             });
             .xl ({
-                flex-grow:0;
+                flex-grow: 0;
             });
         }
     }
@@ -231,6 +248,8 @@
         .sm ({
             display: none;
             position: absolute;
+            top: 105px;
+            left: -13px;
             width: 100%;
             color: #eebe98;
             font-weight: bold;
@@ -238,16 +257,11 @@
             line-height: 20px;
             text-align: center;
             opacity: 0.2;
-            top: 105px;
-            left: -13px;
-          
         });
         .xl ({
-            font-size: 120px;
             top: auto;
             left: auto;
-
-        
+            font-size: 120px;
         });
 
         &_type_active-number {

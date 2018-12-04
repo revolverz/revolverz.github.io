@@ -1,14 +1,26 @@
 .menu {
-    display: flex;
-    justify-content: space-between;
-    width: 675px;
-    list-style-type: none;
+    .sm ({
+        display: flex;
+        justify-content: space-evenly;
+        width: 675px;
+        list-style-type: none;
+    });
+    .xl ({
+        justify-content: space-between;
+    });
 
     &__link {
-        color: #fff;
-        font-weight: bold;
-        font-size: 23.5px;
-        text-decoration: none;
+      
+        .sm ({
+            color: #fff;
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: none;
+    
+        });
+        .xl ({
+            font-size: 23.5px;
+        });
 
         &_type {
             &_women {
