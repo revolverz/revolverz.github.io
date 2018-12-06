@@ -112,15 +112,20 @@
 }
 
 .mixed-slider__item {
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-    width: 270px;
-    height: 376px;
-    margin-right: 30px;
-    border-bottom: 1px solid #e7e7e7;
-    vertical-align: top;
-    white-space: normal;
+    .sm ({
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        width: 270px;
+        height: 376px;
+        margin-right: 0;
+        border-bottom: 1px solid #e7e7e7;
+        vertical-align: top;
+        white-space: normal;
+    });
+    .xl ({
+        margin-right: 30px;
+    });
 }
 
 .mixed-slider__item:hover {
@@ -171,8 +176,15 @@
 }
 
 .mixed-slider__img-title img {
-    width: 270px;
-    height: 210px;
+    .sm ({
+        width: 270px;
+        height: 210px;
+        margin-left: 10px;
+    });
+    .xl ({
+        margin-left: 0px;
+    });
+   
 }
 
 .mixed-slider__item p {
