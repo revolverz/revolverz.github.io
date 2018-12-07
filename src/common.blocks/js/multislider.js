@@ -167,7 +167,7 @@
         // measure slide width, for animation calculations
         function findItemWidth(){
             reTargetSlides();
-             animateDistance = $imgFirst.width() + 30;
+             animateDistance = $imgFirst.width() +30;
     
             var left = parseInt($msContent.find('.mixed-slider__item:first').css('padding-left'));
             var right = parseInt($msContent.find('.mixed-slider__item:first').css('padding-right'));
