@@ -1,4 +1,8 @@
 .main-content {
+    .xs ({
+        display: none;
+
+    });
     .sm ({
         display: flex;
         flex-direction: column;
@@ -21,6 +25,12 @@
     }
 
     &__poster-items {
+        .xs ({
+            height: 240px;
+            margin-top: 35px;
+            margin-left: 40px;
+            color: #232323;
+        });
         .sm ({
             height: 240px;
             margin-top: 35px;
@@ -111,6 +121,14 @@
     }
 
     &__img {
+        .xs ({
+            display: block;
+            position: absolute;
+            bottom: -80px;
+            left: 365px;
+            width: 200px;
+            height: 350px;
+        });
         .sm ({
             display: block;
             position: absolute;

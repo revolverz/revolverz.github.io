@@ -1,5 +1,14 @@
 .menu {
-    .sm ({
+    .xs ({
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        list-style-type: none;
+        background: rgba(255, 255, 255, 0.7);
+        height: 260px;
+        margin-top: 20px;
+    });
+     .sm ({
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -8,20 +17,23 @@
         height: 300px;
         margin-top: 20px;
     });
-    
     .md ({
         flex-direction: row;
         justify-content: space-between;
         width: 570px;
         background: none;
         height: auto;
+        margin-top: 0px;
     });
     .xl ({
        width: 675px;
     });
 
     &__item {
-        .sm ({
+    .xs ({
+        margin: 10px;
+    });
+    .sm ({
         margin: 10px;
     });
     .xl ({
@@ -29,8 +41,14 @@
      });
     }
 
-
     &__link {
+        .xs ({
+            color: #232323;
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: none;
+            margin-left: 30px;
+        });
         .sm ({
             color: #232323;
             font-weight: bold;
@@ -65,16 +83,18 @@
 }
 
 .menu-icon {
-    border: none;
-    font-size: 0;
-    background: none;
-    cursor: pointer;
     .xs ( {
         display: block;
-        position: fixed;
-        top: 0;
-        top: 5px;
+       // position: fixed;
+       position: static;
         z-index: 1000;
+        width: 19px;
+        left: 31px;
+        height: 25px;
+        border: none;
+        font-size: 0;
+        background: none;
+        cursor: pointer;
     });
     .sm ( {
         display: block;
@@ -83,6 +103,10 @@
         width: 19px;
         left: 31px;
         height: 25px;
+        border: none;
+        font-size: 0;
+        background: none;
+        cursor: pointer;
     });
     .md ( {
         display: none;
@@ -102,7 +126,7 @@
 .menu-icon:after {
     .xs ( {
         display: block;
-        border-top: 3px solid #fff;
+        border-top: 3px solid #be926f;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
@@ -132,7 +156,7 @@
 
 .menu-icon:before {
     .xs ( {
-        top: 7px;
+        top: 4px;
     });
     .sm ( {
         top: 4px;
@@ -173,6 +197,12 @@
 }
 
 .menu-container {
+    .xs ( {
+        display: flex;
+        justify-content: left;
+        position: fixed;
+        z-index: 300;
+    });
     .sm ( {
         display: flex;
         justify-content: left;

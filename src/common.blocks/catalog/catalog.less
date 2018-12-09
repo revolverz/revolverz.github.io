@@ -6,9 +6,13 @@
         display: flex;
         height: 378px;
         margin-bottom: 20px;
-        background-color: ffffff;
+        background-color: #fff;
+        .xs ({
+            flex-wrap: wrap;
+            height: 615px;
+         });
     }
-
+    
     &__hover-options {
         display: flex;
         position: absolute;
@@ -26,9 +30,18 @@
     &__add-offer {
         display: flex;
         margin-bottom: 20px;
+        .xs ({
+            display: flex;
+            flex-wrap: wrap;
+        });
     }
 
     &__skirt {
+        .xs ({
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px
+        });
         .sm ({
             display: flex;
             justify-content: space-around;
@@ -54,10 +67,16 @@
 
         &_type {
             &_marco {
+                .xs ({
+                    margin-left: 50px;
+                    margin-bottom: 30px;
+                });
                 margin-right: 1px;
             }
-
             &_montana {
+                .xs ({
+                    margin-left: 50px;
+                });
                 margin-right: 1px;
             }
         }
@@ -69,9 +88,15 @@
         &_type {
             &_marco {
                 margin-left: -32px;
+                .xs ({
+                    margin-left: 0px;
+                });
             }
 
             &_montana {
+                .xs ({
+                    margin-right: 0px;
+                }); 
                 margin-right: 16px;
             }
         }
@@ -125,6 +150,13 @@
     }
 
     &__denim-info {
+        .xs ({
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+            margin-left: 15px;
+        });
         .sm ({
             display: flex;
             flex-direction: column;
