@@ -82,11 +82,10 @@
     }
 }
 
-.menu-icon {
+.menu__icon {
     .xs ( {
         display: block;
-       // position: fixed;
-       position: static;
+        position: fixed;
         z-index: 1000;
         width: 19px;
         left: 31px;
@@ -121,9 +120,9 @@
     });
 }
 
-.menu-icon, 
-.menu-icon:before, 
-.menu-icon:after {
+.menu__icon, 
+.menu__icon:before, 
+.menu__icon:after {
     .xs ( {
         display: block;
         border-top: 3px solid #be926f;
@@ -145,8 +144,8 @@
 }
 
 
-.menu-icon:before, 
-.menu-icon:after {
+.menu__icon:before, 
+.menu__icon:after {
     display: block;
     position: absolute;
     right: 0;
@@ -154,7 +153,7 @@
     content: "";
 }
 
-.menu-icon:before {
+.menu__icon:before {
     .xs ( {
         top: 4px;
     });
@@ -163,27 +162,27 @@
     });
 }
 
-.menu-icon:after {
+.menu__icon:after {
     top: 12px;
 }
 
-.menu-icon.opened {
+.menu__icon.opened {
     border-top-color: transparent;
 }
 
-.menu-icon.opened:after {
+.menu__icon.opened:after {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     transform: translate(0px, -9px) rotate(45deg);
 }
 
-.menu-icon.opened:before {
+.menu__icon.opened:before {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     transform: translate(0px, 1px) rotate(-45deg);
 }
 
-.menu-container.closed {
+.menu__container.closed {
     display: flex;
     .xs ( {
         display: none;
@@ -196,7 +195,7 @@
     });
 }
 
-.menu-container {
+.menu__container {
     .xs ( {
         display: flex;
         justify-content: left;
