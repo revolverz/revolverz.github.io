@@ -1,14 +1,29 @@
 .footer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 71px;
-    border: 1px solid #e7e7e7;
-    font-size: 13px;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 24px;
+    .xs ({ 
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        height: 120px;
+        justify-content: space-around;
+    });
+    .sm ({
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 71px;
+        border: 1px solid #e7e7e7;
+        font-size: 13px;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 24px;
+    });
 
     &__social-media {
+        .xs ({ 
+            display: flex;
+            justify-content: space-around;
+            width: 160px;
+        }); 
         .sm ({
             display: flex;
             position: relative;
@@ -17,7 +32,7 @@
             width: 160px;
         });
         .xl ({
-            left: 82px;
+            left: -58px;
         });
     }
 
@@ -32,20 +47,22 @@
             text-decoration: none;
         });
         .xl ({
-            right: 80px;
+            right: -58px;
         });
     }
 
     &__info {
-        display: flex;
-        position: relative;
-        right: 48px;
-        justify-content: space-between;
-        width: 300px;
-        color: #999;
-        font-weight: bold;
-        font-size: 13px;
-        line-height: 24px;
+        .xs ({ 
+            display: flex;
+            position: relative;
+            right: 0px;
+            justify-content: space-between;
+            color: #999;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 24px;
+            width: 280px;
+        });
         .sm ({
             display: flex;
             position: relative;
@@ -60,7 +77,7 @@
             line-height: 24px;
         });
         .xl ({
-            right: 48px;
+            right: 52px;
             flex-direction: row;
         });
     }
@@ -69,6 +86,8 @@
         color: #999;
         text-decoration: none;
     }
+
+    
 
     .footer__icon {
         display: block;
