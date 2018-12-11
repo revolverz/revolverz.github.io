@@ -1,65 +1,77 @@
+
 .menu {
-    .xs ({
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        list-style-type: none;
-        background: rgba(255, 255, 255, 0.7);
-        height: 260px;
-        margin-top: 20px;
-    });
-     .sm ({
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        list-style-type: none;
-        background: rgba(255, 255, 255, 0.7);
-        height: 300px;
-        margin-top: 20px;
-    });
-    .md ({
-        flex-direction: row;
-        justify-content: space-between;
-        width: 570px;
-        background: none;
-        height: auto;
-        margin-top: 0px;
-    });
-    .xl ({
-       width: 675px;
-    });
+    width: 200px;
+
+    &__list {
+        .xs({
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 260px;
+            margin-top: 20px;
+            list-style-type: none;
+            background: rgba(255, 255, 255, 0.7);
+        });
+
+        .sm({
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 300px;
+            margin-top: 20px;
+            list-style-type: none;
+            background: rgba(255, 255, 255, 0.7);
+        });
+
+        .md({
+            flex-direction: row;
+            justify-content: space-between;
+            width: 570px;
+            height: auto;
+            margin-top: 0;
+            background: none;
+        });
+
+        .xl({
+            width: 675px;
+        });
+    }
 
     &__item {
-    .xs ({
-        margin: 10px;
-    });
-    .sm ({
-        margin: 10px;
-    });
-    .xl ({
-        margin:0;
-     });
+        .xs({
+            margin: 10px;
+        });
+
+        .sm({
+            margin: 10px;
+        });
+
+        .xl({
+            margin: 0;
+        });
     }
 
     &__link {
-        .xs ({
+        .xs({
+            margin-left: 30px;
             color: #232323;
             font-weight: bold;
             font-size: 20px;
             text-decoration: none;
-            margin-left: 30px;
         });
-        .sm ({
+
+        .sm({
+            margin-left: 30px;
             color: #232323;
             font-weight: bold;
             font-size: 20px;
             text-decoration: none;
-            margin-left: 30px;
         });
-        .md ({
+
+        .md({
+            margin-left: 0;
             color: #fff;
             font-size: 23.5px;
-            margin-left: 0px;
         });
 
         &_type {
@@ -80,137 +92,143 @@
     &__link:hover {
         color: #be926f;
     }
-}
 
-.menu-icon {
-    .xs ( {
-        display: block;
-       // position: fixed;
-       position: static;
-        z-index: 1000;
-        width: 19px;
-        left: 31px;
-        height: 25px;
-        border: none;
-        font-size: 0;
-        background: none;
-        cursor: pointer;
-    });
-    .sm ( {
-        display: block;
-        position: fixed;
-        z-index: 1000;
-        width: 19px;
-        left: 31px;
-        height: 25px;
-        border: none;
-        font-size: 0;
-        background: none;
-        cursor: pointer;
-    });
-    .md ( {
-        display: none;
-        position: relative;
-        width: 30px;
-        height: 25px;
-        border: none;
-        font-size: 0;
-        background: none;
-        cursor: pointer;
-        top: 0;
-    });
-}
+    &__icon {
+        .xs({
+            display: block;
+            // position: fixed;
+            position: static;
+            left: 31px;
+            z-index: 1000;
+            width: 19px;
+            height: 25px;
+            border: none;
+            font-size: 0;
+            background: none;
+            cursor: pointer;
+        });
 
-.menu-icon, 
-.menu-icon:before, 
-.menu-icon:after {
-    .xs ( {
-        display: block;
-        border-top: 3px solid #be926f;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s;
-    });
-    .sm ( {
-        display: block;
-        border-top: 3px solid #be926f;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s;
+        .sm({
+            display: block;
+            position: fixed;
+            left: 31px;
+            z-index: 1000;
+            width: 19px;
+            height: 25px;
+            border: none;
+            font-size: 0;
+            background: none;
+            cursor: pointer;
+        });
+
+        .md({
+            display: none;
+            position: relative;
+            top: 0;
+            width: 30px;
+            height: 25px;
+            border: none;
+            font-size: 0;
+            background: none;
+            cursor: pointer;
+        });
     }
-    );
-    .md ( {
-        display: none;
-    });    
-}
 
+    &__icon, &__icon:before, &__icon:after {
+        .xs({
+            display: block;
+            border-top: 3px solid #be926f;
+            -webkit-transition: all .3s;
+            -moz-transition: all .3s;
+            transition: all .3s;
+        });
 
-.menu-icon:before, 
-.menu-icon:after {
-    display: block;
-    position: absolute;
-    right: 0;
-    left: 0;
-    content: "";
-}
+        .sm({
+            display: block;
+            border-top: 3px solid #be926f;
+            -webkit-transition: all .3s;
+            -moz-transition: all .3s;
+            transition: all .3s;
+        });
 
-.menu-icon:before {
-    .xs ( {
-        top: 4px;
-    });
-    .sm ( {
-        top: 4px;
-    });
-}
+        .md({
+            display: none;
+        });
+    }
 
-.menu-icon:after {
-    top: 12px;
-}
+    &__icon:before, &__icon:after {
+        display: block;
+        position: absolute;
+        right: 0;
+        left: 0;
+        content: ''; // палка для гамбургера, без указания content не отображается
+    }
 
-.menu-icon.opened {
-    border-top-color: transparent;
-}
+    &__icon:before {
+        .xs({
+            top: 4px;
+        });
+        
+        .sm({
+            top: 4px;
+        });
+    }
 
-.menu-icon.opened:after {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    transform: translate(0px, -9px) rotate(45deg);
-}
+    &__icon:after {
+        top: 12px;
+    }
 
-.menu-icon.opened:before {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    transform: translate(0px, 1px) rotate(-45deg);
-}
+    &__icon.opened {
+        border-top-color: transparent;
+    }
 
-.menu-container.closed {
-    display: flex;
-    .xs ( {
-        display: none;
-    });
-    .sm ( {
-        display: none;
-    });
-    .md ( {
-        display: flex;
-    });
-}
+    &__icon.opened:after {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: translate(0px, -9px) rotate(45deg);
+    }
 
-.menu-container {
-    .xs ( {
-        display: flex;
-        justify-content: left;
-        position: fixed;
-        z-index: 300;
-    });
-    .sm ( {
-        display: flex;
-        justify-content: left;
-        position: fixed;
-        z-index: 300;
-    });
-    .md ( {
-        position: static;
-        justify-content: center;
-    });
+    &__icon.opened:before {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        transform: translate(0px, 1px) rotate(-45deg);
+    }
+
+    &__container.closed {
+        .xs({
+            display: flex;
+        });
+
+        .sm({
+            display: none;
+        });
+
+        .md({
+            display: none;
+        });
+    }
+
+    &__container {
+        left: 0;
+
+        .xs({
+           
+            display: flex;
+            position: fixed;
+            z-index: 300;
+            justify-content: left;
+        });
+
+        .sm({
+            display: flex;
+            position: fixed;
+            z-index: 300;
+            justify-content: left;
+        });
+
+        .md({
+            position: static;
+            justify-content: center;
+        });
+    }
 }

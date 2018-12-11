@@ -1,10 +1,10 @@
 .burger {
-    .xs ({
+    .xs({
         display: block;
         opacity: 0;
     });
 
-    .sm ({
+    .sm({
         opacity: 0;
         display: block;
         position: relative;
@@ -16,9 +16,9 @@
         transform: rotate(0deg);
     });
 
-    .md ({
+    .md({
         opacity: 1;
-        });
+    });
 
     &__line {
         display: block;
@@ -42,25 +42,5 @@
         &_type_lower {
             top: 18px;
         }
-    }
-
-    &.open &__line_type_top {
-        top: 18px;
-        left: 50%;
-        width: 0;
-    }
-
-    &.open &__line_type_middle {
-        transform: rotate(45deg);
-    }
-
-    &.open &__line_type_motion {
-        transform: rotate(-45deg);
-    }
-
-    &.open &__line_type_lower {
-        top: 18px;
-        left: 50%;
-        width: 0;
-    }
+    }  
 }

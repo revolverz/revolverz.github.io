@@ -1,13 +1,14 @@
 .footer {
-    .xs ({ 
+    .xs({
         display: flex;
         flex-direction: column;
-        height: auto;
-        align-items: center;
-        height: 120px;
         justify-content: space-around;
+        align-items: center;
+        height: auto;
+        height: 120px;
     });
-    .sm ({
+
+    .sm({
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -19,25 +20,27 @@
     });
 
     &__social-media {
-        .xs ({ 
+        .xs({
             display: flex;
             justify-content: space-around;
             width: 160px;
-        }); 
-        .sm ({
+        });
+
+        .sm({
             display: flex;
             position: relative;
             left: 0;
             justify-content: space-around;
             width: 160px;
         });
-        .xl ({
+
+        .xl({
             left: -58px;
         });
     }
 
     &__rights {
-        .sm ({
+        .sm({
             display: flex;
             position: relative;
             right: 0;
@@ -46,24 +49,26 @@
             text-align: center;
             text-decoration: none;
         });
-        .xl ({
+
+        .xl({
             right: -58px;
         });
     }
 
     &__info {
-        .xs ({ 
+        .xs({
             display: flex;
             position: relative;
-            right: 0px;
+            right: 0;
             justify-content: space-between;
+            width: 280px;
             color: #999;
             font-weight: bold;
             font-size: 13px;
             line-height: 24px;
-            width: 280px;
         });
-        .sm ({
+
+        .sm({
             display: flex;
             position: relative;
             right: 25px;
@@ -76,7 +81,8 @@
             font-size: 13px;
             line-height: 24px;
         });
-        .xl ({
+        
+        .xl({
             right: 52px;
             flex-direction: row;
         });
@@ -87,9 +93,7 @@
         text-decoration: none;
     }
 
-    
-
-    .footer__icon {
+    &__icon {
         display: block;
 
         &_type {
