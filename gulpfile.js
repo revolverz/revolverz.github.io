@@ -50,7 +50,7 @@ gulp.task( 'compress-js', function (cb) {
 });
 
 gulp.task( 'live-server', function() {
-	var server = gls.static('public');
+	var server = gls.static('public/');
 	server.start();
  
 	//use gulp.watch to trigger server actions(notify, start or stop)
