@@ -1,7 +1,5 @@
 
 .menu {
-    width: 200px;
-
     &__list {
         .xs({
             display: flex;
@@ -195,7 +193,7 @@
 
     &__container.closed {
         .xs({
-            display: flex;
+            display: none;
         });
 
         .sm({
@@ -203,16 +201,27 @@
         });
 
         .md({
+            display: block;
+        });
+    }
+
+    &__container.opened {
+        .xs({
+            display: block;
+        });
+
+        .sm({
             display: none;
         });
     }
+
+
 
     &__container {
         left: 0;
 
         .xs({
-           
-            display: flex;
+            display: block;
             position: fixed;
             z-index: 300;
             justify-content: left;
