@@ -9,6 +9,7 @@ var cssmin       = require('gulp-cssmin');
 var rename       = require('gulp-rename');
 var uglify       = require('gulp-uglify');
 var pump         = require('pump');
+var deploy      = require('gulp-gh-pages');
 
 /* Task to compile less */
 gulp.task( 'compile-less', function() {
@@ -67,5 +68,11 @@ gulp.task( 'compress-css', function() {
     .pipe(gulp.dest( 'public/img/' ));
 });
 
+//  Push build to gh-pages
+gulp.task( 'deploy', function () {
+	return gulp.src( 'public/**/*' )
+	  .pipe(deploy())
+  });
+
 /* Task when running `gulp` from terminal */
-gulp.task( 'default', [ 'compile-less', 'watch-less', 'concat-js', 'compress-js',  'copy-img', 'live-server' ]);
+gulp.task( 'default', [ 'compile-less', 'watch-less', 'concat-js', 'compress-js',  'copy-img', 'live-server', 'deploy']);
