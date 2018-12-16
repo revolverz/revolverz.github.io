@@ -1,6 +1,7 @@
 .header-line {
     display: flex;
     justify-content: space-between;
+
     .xs({
         flex-direction: column;
     });
@@ -14,7 +15,8 @@
         letter-spacing: 0.1px;
         
         .xs({
-            margin-top: 45px;
+            margin-top: 20px;
+            margin-left: 50px;
         });
     }
 
@@ -22,12 +24,20 @@
         margin-right: 6px;
         color: #666;
         text-decoration: none;
+
+        .xs({
+            margin-right: 4px;
+        });
     }
 
     &__divider {
         margin-right: 7px;
         color: #2d2d2d;
         text-decoration: none;
+
+        .xs({
+            margin-right: 4px;
+        });
     }
 
     &__register {
