@@ -2,22 +2,25 @@
     display: flex;
     justify-content: space-between;
 
-    .xs({
-        flex-direction: column;
-    });
-    
-
     &__auth {
-        margin-top: 51px;
-        margin-left: 31.5px;
         font-weight: bold;
         font-size: 13px;
         letter-spacing: 0.1px;
         
         .xs({
             margin-top: 26px;
-            margin-left: 50px;
+            margin-left: 60px;
         });
+
+        .sm({
+            margin-top: 26px;
+            margin-left: 60px;
+        });   
+
+        .md({
+            margin-top: 51px;
+            margin-left: 31.5px;
+        });  
     }
 
     &__login {
