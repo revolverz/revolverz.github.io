@@ -9,7 +9,12 @@
         height: 480px;
         margin-bottom: 20px;
         background-color: #e7e7e7;
+        padding-top: 67px;
     });
+
+    .md({
+        padding: 0;
+    });   
 
     .lg({
         flex-direction: row;
@@ -48,9 +53,13 @@
 
     &__poster-item-one {
         position: relative;
-        z-index: 100;
+        z-index: 0;
         margin-left: -3px;
         font-size: 40px;
+
+        .md({
+            z-index: 300;
+        });
 
         &_type {
             &_sale {
@@ -78,10 +87,14 @@
     &__poster-item-two {
         .sm({
             position: relative;
-            z-index: 100;
             font-weight: bold;
             font-size: 40px;
             line-height: 71px;
+            z-index: 0;
+        });
+
+        .md({
+            z-index: 300;
         });
 
         .lg({
@@ -96,13 +109,17 @@
     &__poster-item-three {
         .sm({
             position: relative;
-            z-index: 100;
             letter-spacing: 2.1px;
             font-weight: 600;
             font-size: 40px;
             line-height: 76px;
+            z-index: 0;
         });
 
+        .md({
+            z-index: 300;
+        });
+        
         .lg({
             font-size: 60px;
         });
@@ -110,8 +127,6 @@
         .xl({
             font-size: 73px;
         });
-
-
 
         &_type_sale {
             .sm({
@@ -126,7 +141,6 @@
 
     &__poster-item-four {
         position: relative;
-        z-index: 100;
         margin-left: 3px;
         color: #666;
         letter-spacing: 0.1px;
@@ -184,7 +198,7 @@
                     display: block;
                     position: absolute;
                     bottom: -26px;
-                    left: 248px;
+                    left: 315px;
                     width: 334px;
                     height: 320px;
                     background: url(/img/main-content/main-content__img_type_new-color.png) no-repeat center center / contain;
