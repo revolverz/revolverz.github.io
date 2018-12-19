@@ -164,8 +164,8 @@
 
         .sm({
             position: absolute;
-            top: 3px;
-            left: 19px;
+            top: 10px;
+            left: 12px; 
         });
 
         .xl({
@@ -184,8 +184,9 @@
 
         .sm({
             position: absolute;
-            top: 3px;
-            right: 15px;
+            top: 10px;
+            right: 5px;
+        
             content: '\f0da';
         });
 
@@ -251,11 +252,14 @@
         color: rgba(0, 0, 0, 0.8);
     }
 
-    @media (max-width: 992px) {
-        &__controls button {
-            font-size: 30px;
-        }
+    &__controls button {
+        font-size: 30px;
+
+        .sm({
+           font-size: 30px;
+        }); 
     }
+    
 
     @media (max-width: 767px) {
         &__controls button {

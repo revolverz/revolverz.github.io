@@ -23,5 +23,5 @@ preloadImages( '/img/denim_type_one.png',
                '/img/mixed-slider/mixed-slider__img-5.png',
                '/img/mixed-slider/mixed-slider__img-6.png',
                '/img/mixed-slider/mixed-slider__img-7.png',
-               '/img/mixed-slider/mixed-slider__img-8.png',
+               '/img/mixed-slider/mixed-slider__img-8.png'
                );
