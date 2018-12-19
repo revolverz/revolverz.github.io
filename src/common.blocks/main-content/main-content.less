@@ -9,9 +9,14 @@
         height: 480px;
         margin-bottom: 20px;
         background-color: #e7e7e7;
+        padding-top: 67px;
     });
 
-    .xl({
+    .md({
+        padding: 0;
+    });   
+
+    .lg({
         flex-direction: row;
     });
 
@@ -40,7 +45,7 @@
             color: #232323;
         });
 
-        .xl({
+        .lg({
             margin-top: 123px;
             margin-left: 70px;
         });
@@ -48,9 +53,13 @@
 
     &__poster-item-one {
         position: relative;
-        z-index: 100;
+        z-index: 0;
         margin-left: -3px;
         font-size: 40px;
+
+        .md({
+            z-index: 300;
+        });
 
         &_type {
             &_sale {
@@ -58,7 +67,7 @@
                     display: none;
                 });
 
-                .xl({
+                .lg({
                     display: block;
                 });
             }
@@ -68,7 +77,7 @@
                     display: none;
                 });
 
-                .xl({
+                .lg({
                     display: block;
                 });
             }
@@ -78,13 +87,17 @@
     &__poster-item-two {
         .sm({
             position: relative;
-            z-index: 100;
             font-weight: bold;
             font-size: 40px;
             line-height: 71px;
+            z-index: 0;
         });
 
-        .xl({
+        .md({
+            z-index: 300;
+        });
+
+        .lg({
             font-size: 80px;
         });
 
@@ -96,11 +109,19 @@
     &__poster-item-three {
         .sm({
             position: relative;
-            z-index: 100;
             letter-spacing: 2.1px;
             font-weight: 600;
             font-size: 40px;
             line-height: 76px;
+            z-index: 0;
+        });
+
+        .md({
+            z-index: 300;
+        });
+        
+        .lg({
+            font-size: 60px;
         });
 
         .xl({
@@ -112,7 +133,7 @@
                 line-height: 60px;
             });
 
-            .xl({
+            .lg({
                 line-height: 76px;
             });
         }
@@ -120,7 +141,6 @@
 
     &__poster-item-four {
         position: relative;
-        z-index: 100;
         margin-left: 3px;
         color: #666;
         letter-spacing: 0.1px;
@@ -147,9 +167,8 @@
             height: 350px;
         });
 
-        .xl({
+        .lg({
             bottom: 0;
-            left: 400px;
             width: 370px;
             height: 470px;
         });
@@ -162,12 +181,16 @@
                     background: url(/img/main-content/main-content__img_type_fashion-shirts.png) no-repeat center center / contain;
                 });
 
-                .xl({
+                .lg({
                     bottom: 0;
-                    left: 400px;
+                    left: 300px;
                     width: 370px;
                     height: 470px;
                 });
+                
+                .xl({
+                    left: 400px;
+                });  
             }
 
             &_new-prints {
@@ -175,26 +198,45 @@
                     display: block;
                     position: absolute;
                     bottom: -26px;
-                    left: 248px;
+                    left: 315px;
                     width: 334px;
                     height: 320px;
                     background: url(/img/main-content/main-content__img_type_new-color.png) no-repeat center center / contain;
                 });
 
-                .xl({
+                .lg({
                     bottom: 60px;
-                    left: 350px;
+                    left: 180px;
                     width: 550px;
                     height: 460px;
+                });
+
+                .xl({
+                    left: 350px;
                 });
             }
 
             &_sale {
                 background: url(/img/main-content/main-content__img_type_sale.png) no-repeat center center / contain;
+                
+                .lg({
+                    left: 300px;
+                });
+                
+                .xl({
+                    left: 400px;
+                });
             }
 
             &_new-swimwear {
                 background: url(/img/main-content/main-content__img_type_new-swimwear.png) no-repeat center center / contain;
+                .lg({
+                    left: 300px;
+                });
+                
+                .xl({
+                    left: 400px;
+                });
             }
         }
     }
@@ -206,7 +248,7 @@
             align-items: flex-end;
         });
 
-        .xl({
+        .lg({
             flex-direction: column;
             width: 50%;
         });
@@ -216,72 +258,7 @@
         background-position: left top, right top;
     }
 
-    &__item {
-        .sm({
-            display: flex;
-            position: relative;
-            justify-content: flex-start;
-            align-items: center;
-            width: 390px;
-            height: 25%;
-            background: none;
-            right: 5px;
-        });
-
-        .xl({
-            background: linear-gradient(#cbcbcb, #cbcbcb), linear-gradient(#cbcbcb, #cbcbcb);
-            background-position: left bottom, right bottom;
-            background-size: 0 0.5px, 370px 1px;
-            background-repeat: no-repeat, no-repeat;
-            right: 0px;
-        });
-
-        &_type_active-bg {
-            .sm({
-                display: flex;
-                color: white;
-                background: none;
-            });
-
-            .xl({
-                background: url(/img/main-content/main-content__type_active-bg.png) no-repeat center center / contain;
-            });
-        }
-    }
-
-    &__item-text {
-        .sm({
-            position: relative;
-            top: 77px;
-            left: -10px;
-            width: 120px;
-            height: 68px;
-            margin-left: 25px;
-            font-weight: 600;
-            font-size: 15px;
-        });
-
-        .xl({
-            top: 0;
-            left: 0;
-            width: auto;
-            height: auto;
-            margin-left: 60px;
-            font-size: 17px;
-        });
-
-        &_type_new-color {
-            .sm({
-                flex-grow: 1;
-            });
-
-            .xl({
-                flex-grow: 0;
-            });
-        }
-    }
-
-    &__number {
+    .main-content__number {
         .sm({
             display: none;
             position: absolute;
@@ -296,15 +273,80 @@
             opacity: 0.5;
         });
         
-        .xl({
+        .lg({
             top: auto;
             left: auto;
             font-size: 120px;
             opacity: 0.2;
         });
+    }
 
-        &_type_active-number {
-            display: block;
+    &__item {
+        .sm({
+            display: flex;
+            position: relative;
+            justify-content: flex-start;
+            align-items: center;
+            width: 390px;
+            height: 25%;
+            background: none;
+            right: 5px;
+        });
+
+        .lg({
+            background: linear-gradient(#cbcbcb, #cbcbcb), linear-gradient(#cbcbcb, #cbcbcb);
+            background-position: left bottom, right bottom;
+            background-size: 0 0.5px, 370px 1px;
+            background-repeat: no-repeat, no-repeat;
+            right: 0px;
+        });
+
+        &_type_active-bg {
+            .sm({
+                display: flex;
+                color: white;
+                background: none;
+            });
+
+            .lg({
+                background: url(/img/main-content/main-content__type_active-bg.png) no-repeat center center / contain;
+            });
+
+            .main-content__number {
+                display: block;
+            }
+        }
+    }
+
+    &__item-text {
+        .sm({
+            position: relative;
+            top: 77px;
+            left: 10px;
+            width: 120px;
+            height: 68px;
+            margin-left: 25px;
+            font-weight: 600;
+            font-size: 15px;
+        });
+
+        .lg({
+            top: 0;
+            left: 0;
+            width: auto;
+            height: auto;
+            margin-left: 60px;
+            font-size: 17px;
+        });
+
+        &_type_new-color {
+            .sm({
+                flex-grow: 1;
+            });
+
+            .lg({
+                flex-grow: 0;
+            });
         }
     }
 }

@@ -1,31 +1,66 @@
 .search-form {
     display: flex;
-    width: 274px;
     height: 46px;
-    margin-top: 35px;
-    margin-right: 28px;
     border: 1px solid #323232;
     border-radius: 25px;
     background-color: #232323;
+    width: 274px;
 
     .xs({
-        width: 180px;
-        margin-right:0;
+        width: 50px;
+        margin: 0;
+        position: absolute;
+        height: 35px;
+        top: 10px;
+        right: 78px;
     });
+
+    .sm({
+        width: 184px;
+        margin-top: 10px;
+        margin-right: 100px;
+    });   
+
+    .md({
+        width: 184px;
+        margin-top: 40px;
+        margin-right: 27px;  
+    }); 
+
+    .lg({
+        width: 274px;
+        margin-top: 35px;
+        margin-right: 28px;
+    });   
 
     &__input {
         box-sizing: border-box;
         padding-left: 24px;
-        margin-left: -114px;
         outline: none;
         border: 0;
         border-radius: 25px;
         color: #fff;
         font-size: 13px;
         background: 0 0;
+        margin-left: -114px;
 
         .xs({
-            margin-left: -81px;
+            margin-left: 0;
+            padding-left: 5px;
+            width: 100%;
+            color: #232323;
+        });
+
+        .sm({
+            margin-left: 0px;
+            width: 180px;
+            padding-left: 10px;
+        });
+
+        .lg({
+            width: 183px;
+            margin-left: -114px;
+            padding-right: 0;
         });
     }
 
@@ -53,14 +88,28 @@
         background: url(/img/search-form/search-form__img_type_search.png) no-repeat center center / contain;
 
         .xs({
-        position: relative;
-        right: 15px;
-        margin-left: -35px;
-        position: relative;
-        right: 15px;
+            position: relative;
+            margin-left: -35px;
+            position: relative;
+            right: 3px;
+            bottom: 5px;
         });
-    
+
+        .sm({
+            margin-left: -25px;
+        });
+
+        .lg({
+            margin-left: 50px;
+        });    
     }
+}
+
+.search-form:hover {
+    .xs({
+        width: 200px;
+        background: #e7e7e7;
+    });
 }
 
 .search-form > .search-form__label {
@@ -69,8 +118,30 @@
     left: 25px;
     font-weight: bold;
     transition: 0.3s;
+
+    .xs({
+        top:15px;
+        display: none;
+    });
+
+    .sm({
+        display:none;
+    });
+    
+    .lg({
+        display: block;
+    });  
 }
 
 .search-form.focus > .search-form__label {
     opacity: 0;
+}
+
+.search-form.focus > .search-form__button {
+    display: none;
+}
+
+.wider {
+    width: 200px;
+    background: #e7e7e7;
 }

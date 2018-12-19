@@ -3,27 +3,44 @@
     justify-content: space-between;
 
     &__auth {
-        margin-top: 51px;
-        margin-left: 31.5px;
         font-weight: bold;
         font-size: 13px;
         letter-spacing: 0.1px;
         
         .xs({
-            margin-top: 45px;
+            margin-top: 26px;
+            margin-left: 60px;
         });
+
+        .sm({
+            margin-top: 26px;
+            margin-left: 60px;
+        });   
+
+        .md({
+            margin-top: 51px;
+            margin-left: 31.5px;
+        });  
     }
 
     &__login {
         margin-right: 6px;
         color: #666;
         text-decoration: none;
+
+        .xs({
+            margin-right: 4px;
+        });
     }
 
     &__divider {
         margin-right: 7px;
         color: #2d2d2d;
         text-decoration: none;
+
+        .xs({
+            margin-right: 4px;
+        });
     }
 
     &__register {

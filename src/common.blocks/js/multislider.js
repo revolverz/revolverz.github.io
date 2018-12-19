@@ -228,14 +228,14 @@
 				$msContent.on('mouseout',function(){
 					continuousLeft();
 				});
-			/* } else {
+			 } else {
             // regular animation pausing
                $msContent.on('mouseover',function(){
                     $multislider.addClass('ms-HOVER');
                 });
                 $msContent.on('mouseout',function(){
                     $multislider.removeClass('ms-HOVER');
-                });*/
+                });
 			}
         }
 
