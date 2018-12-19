@@ -1,7 +1,6 @@
-$( function () {
+$( function() {
 	$('#menuBtn').on( 'click', function() {
-	$('#menuBtn').toggleClass('opened')
+	$('#menuBtn').toggleClass('opened');
 	$('#menuContainer').toggleClass('opened');
     });
 });
-

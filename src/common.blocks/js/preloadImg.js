@@ -1,8 +1,6 @@
 function preloadImages() {
-    {
-        for( var i = 0; i < arguments.length; i++ )
-            $( '<img />' ).attr( 'src', arguments[i] );
-        }
+    for( var i = 0; i < arguments.length; i++ )
+    $('<img />').attr( 'src', arguments[ i ] );
 };
 
 preloadImages( '/img/denim_type_one.png',
